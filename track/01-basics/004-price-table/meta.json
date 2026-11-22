@@ -1,0 +1,11 @@
+{
+  "id": "004",
+  "slug": "price-table",
+  "title": "Tabela de preços",
+  "topic": "output",
+  "level": 2,
+  "concepts": ["saída", "alinhamento", "formatação"],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {"name": "codekub", "author": "Matheus Ferreira", "license": "CC BY 4.0"}
+}
