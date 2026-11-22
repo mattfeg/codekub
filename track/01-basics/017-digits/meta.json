@@ -1,0 +1,11 @@
+{
+  "id": "017",
+  "slug": "digits",
+  "title": "Dígitos de um número",
+  "topic": "arithmetic",
+  "level": 2,
+  "concepts": ["divisão inteira", "resto", "dígitos"],
+  "time_limit": 1.0,
+  "samples": 2,
+  "source": {"name": "codekub", "author": "Matheus Ferreira", "license": "CC BY 4.0"}
+}

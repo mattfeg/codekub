@@ -1,0 +1,11 @@
+{
+  "id": "018",
+  "slug": "powers",
+  "title": "Potências",
+  "topic": "arithmetic",
+  "level": 2,
+  "concepts": ["operadores", "potência", "inteiros grandes"],
+  "time_limit": 1.0,
+  "samples": 2,
+  "source": {"name": "codekub", "author": "Matheus Ferreira", "license": "CC BY 4.0"}
+}
