@@ -1,0 +1,18 @@
+{
+  "id": "034",
+  "slug": "domino-piling",
+  "title": "Peças de dominó",
+  "topic": "boss",
+  "level": 4,
+  "concepts": ["área", "divisão inteira", "raciocínio"],
+  "time_limit": 2.0,
+  "samples": 2,
+  "rating": 800,
+  "source": {
+    "name": "Codeforces 50A — Domino piling",
+    "url": "https://codeforces.com/problemset/problem/50/A",
+    "dataset": "open-r1/codeforces",
+    "license": "CC BY 4.0",
+    "changes": "Traduzido para o português e adaptado por Matheus Ferreira; testes oficiais mantidos."
+  }
+}
