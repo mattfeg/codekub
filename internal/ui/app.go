@@ -26,12 +26,13 @@ const (
 	scrProgress
 	scrProblem
 	scrJudge
+	scrSettings
 )
 
 var tabs = []struct {
 	s     screen
 	label string
-}{{scrHome, "Início"}, {scrTrack, "Trilha"}, {scrProgress, "Progresso"}}
+}{{scrHome, "Início"}, {scrTrack, "Trilha"}, {scrProgress, "Progresso"}, {scrSettings, "Ajustes"}}
 
 // Options open the TUI somewhere other than the splash screen.
 type Options struct {
@@ -80,6 +81,7 @@ type model struct {
 	prob problemState
 	jdg  judgeState
 	prog progressState
+	set  settingsState
 }
 
 func Run(env *core.Env, opts Options) error {
@@ -154,6 +156,8 @@ func (m *model) switchTo(s screen) {
 		m.prog.enter(m)
 	case scrProblem:
 		m.prob.offset = 0
+	case scrSettings:
+		m.set.enter()
 	}
 }
 
@@ -228,6 +232,9 @@ func (m *model) handleKey(key string) tea.Cmd {
 		m.switchTo(scrHome)
 		return nil
 	}
+	if m.screen == scrSettings && m.set.typing {
+		return m.settingsKey(key) // every key is text while typing a command
+	}
 	if key == "?" || (m.helpOpen && key == "esc") {
 		m.helpOpen = !m.helpOpen
 		m.wipe = 0
@@ -258,6 +265,8 @@ func (m *model) handleKey(key string) tea.Cmd {
 		return m.problemKey(key)
 	case scrJudge:
 		return m.judgeKey(key)
+	case scrSettings:
+		return m.settingsKey(key)
 	case scrProgress:
 		if key == "r" {
 			m.prog.enter(m)
@@ -409,6 +418,8 @@ func (m *model) View() string {
 		body = m.judgeView()
 	case m.screen == scrProgress:
 		body = m.progressView()
+	case m.screen == scrSettings:
+		body = m.settingsView()
 	}
 	return header + "\n" + m.fitBody(body, bodyH) + "\n" + footer
 }
@@ -465,6 +476,11 @@ func (m *model) footerView() string {
 		help = helpLine("e", "editar", "r", "julgar de novo", "x", "exemplos", "w", "watch", "esc", "voltar")
 	case scrProgress:
 		help = helpLine("r", "repetir animação", "tab", "abas", "q", "sair")
+	case scrSettings:
+		help = helpLine("↑↓", "navegar", "enter", "mudar", "esc", "fechar lista", "tab", "abas", "q", "sair")
+		if m.set.typing {
+			help = helpLine("enter", "salvar", "esc", "cancelar")
+		}
 	}
 	if m.helpOpen {
 		help = helpLine("esc ?", "fechar ajuda", "q", "sair")

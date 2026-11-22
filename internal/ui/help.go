@@ -36,6 +36,10 @@ func (m *model) helpView(h int) string {
 			{"x", "testar só os exemplos"}, {"w", "modo watch"},
 		}),
 		"",
+		keySection("AJUSTES", [][2]string{
+			{"tab", "até a aba Ajustes"}, {"enter", "escolher editor ou linguagem"},
+		}),
+		"",
 		keySection("NO JULGAMENTO", [][2]string{
 			{"r  s", "julgar de novo"}, {"x", "testar só os exemplos"},
 			{"w", "ligar ou desligar o watch"}, {"e", "abrir no editor"},

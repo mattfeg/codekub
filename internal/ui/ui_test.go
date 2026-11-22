@@ -63,6 +63,10 @@ func (h *harness) key(k string) {
 		msg = tea.KeyMsg{Type: tea.KeyTab}
 	case "down":
 		msg = tea.KeyMsg{Type: tea.KeyDown}
+	case "up":
+		msg = tea.KeyMsg{Type: tea.KeyUp}
+	case "backspace":
+		msg = tea.KeyMsg{Type: tea.KeyBackspace}
 	}
 	h.send(msg)
 }
@@ -171,6 +175,87 @@ func TestSolveThroughTheTUI(t *testing.T) {
 		h.key("esc")
 		if h.m.helpOpen {
 			t.Fatal("esc should close help")
+		}
+	}
+}
+
+func TestSettingsThroughTheTUI(t *testing.T) {
+	env, _ := newEnv(t)
+	for _, key := range []string{"CODEKUB_EDITOR", "CODEKUB_LANG"} {
+		t.Setenv(key, "")
+	}
+	h := &harness{t: t, m: newModel(env, Options{})}
+	h.send(tea.WindowSizeMsg{Width: 140, Height: 40})
+	h.key("x")
+	for h.m.screen != scrSettings {
+		h.key("tab")
+	}
+	h.frames(20)
+	h.expect("AJUSTES")
+
+	// Pick the first installed editor from the list.
+	h.key("enter")
+	if len(h.m.set.picker) < 2 {
+		t.Fatalf("editor picker should list the default plus installed editors: %+v", h.m.set.picker)
+	}
+	h.key("down")
+	want := h.m.set.picker[1].value
+	h.key("enter")
+	if got := env.WS.SavedConfig().Editor; got != want {
+		t.Fatalf("editor saved as %q, want %q", got, want)
+	}
+	if snap := os.Getenv("SNAP_DIR"); snap != "" {
+		h.key("enter")
+		os.WriteFile(filepath.Join(snap, "140x40-10-settings.txt"), []byte(h.view()), 0o644)
+		h.key("esc")
+	}
+
+	openCustom := func() {
+		h.key("enter")
+		for !h.m.set.picker[h.m.set.pick].custom {
+			h.key("down")
+		}
+		h.key("enter")
+	}
+
+	// Custom command: global keys like q must become text while typing.
+	openCustom()
+	for _, r := range "viq" {
+		h.key(string(r))
+	}
+	if h.m.screen != scrSettings || h.m.set.input != "viq" {
+		t.Fatalf("typing should capture keys, input %q", h.m.set.input)
+	}
+	h.key("backspace")
+	h.key("enter")
+	if got := env.WS.SavedConfig().Editor; got != "vi" {
+		t.Fatalf("custom editor saved as %q", got)
+	}
+
+	// A command that does not exist is refused.
+	openCustom()
+	for _, r := range "nao-existe" {
+		h.key(string(r))
+	}
+	h.key("enter")
+	if got := env.WS.SavedConfig().Editor; got != "vi" {
+		t.Fatalf("a missing command must not be saved, got %q", got)
+	}
+	h.key("esc")
+	h.key("esc")
+
+	// Language: choose Python when it is installed.
+	h.key("down")
+	h.key("enter")
+	for i, o := range h.m.set.picker {
+		if o.value == "python" && !o.disabled {
+			for h.m.set.pick != i {
+				h.key("down")
+			}
+			h.key("enter")
+			if env.Lang.ID != "python" || env.WS.SavedConfig().Language != "python" {
+				t.Fatalf("language not switched: %s / %s", env.Lang.ID, env.WS.SavedConfig().Language)
+			}
 		}
 	}
 }

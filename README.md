@@ -42,6 +42,9 @@ codekub config editor --padrao    # volta para $VISUAL, $EDITOR ou o do sistema
 codekub config linguagem python
 ```
 
+No painel, a aba **Ajustes** faz o mesmo: lista os editores instalados na sua
+máquina (ou aceita um comando personalizado) e as linguagens disponíveis.
+
 O editor é escolhido nesta ordem: `CODEKUB_EDITOR`, `~/.codekub/config.json`,
 `$VISUAL`, `$EDITOR` e, por fim, o editor de texto padrão do sistema. Editores
 de terminal abrem dentro do painel e voltam quando você sai deles. Editores
