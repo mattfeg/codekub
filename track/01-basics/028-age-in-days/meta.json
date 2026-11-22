@@ -1,0 +1,11 @@
+{
+  "id": "028",
+  "slug": "age-in-days",
+  "title": "Idade em dias",
+  "topic": "applied",
+  "level": 2,
+  "concepts": ["multiplicação", "conversão de unidades"],
+  "time_limit": 1.0,
+  "samples": 2,
+  "source": {"name": "codekub", "author": "Matheus Ferreira", "license": "CC BY 4.0"}
+}
