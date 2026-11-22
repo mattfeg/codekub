@@ -21,6 +21,7 @@ type Workspace struct {
 
 type Config struct {
 	Language string `json:"language"`
+	Editor   string `json:"editor,omitempty"` // shell command; the file path is appended
 }
 
 // Default honors CODEKUB_HOME (data) and CODEKUB_SOLUTIONS (solutions).
@@ -50,11 +51,28 @@ func envOr(key, fallback string) string {
 
 func (w *Workspace) DBPath() string { return filepath.Join(w.Data, "codekub.db") }
 
-func (w *Workspace) Config() Config {
+func (w *Workspace) configPath() string { return filepath.Join(w.Data, "config.json") }
+
+// SavedConfig is what config.json holds, without environment overrides.
+func (w *Workspace) SavedConfig() Config {
 	cfg := Config{Language: "ruby"}
-	if data, err := os.ReadFile(filepath.Join(w.Data, "config.json")); err == nil {
+	if data, err := os.ReadFile(w.configPath()); err == nil {
 		json.Unmarshal(data, &cfg)
 	}
+	return cfg
+}
+
+func (w *Workspace) SaveConfig(cfg Config) error {
+	data, err := json.MarshalIndent(cfg, "", "  ")
+	if err != nil {
+		return err
+	}
+	return os.WriteFile(w.configPath(), append(data, '\n'), 0o644)
+}
+
+// Config is the effective configuration: config.json plus CODEKUB_LANG.
+func (w *Workspace) Config() Config {
+	cfg := w.SavedConfig()
 	if v := os.Getenv("CODEKUB_LANG"); v != "" {
 		cfg.Language = v
 	}
@@ -85,13 +103,29 @@ func (w *Workspace) EnsureSolution(e *track.Exercise, lang judge.Language) (stri
 	return path, os.WriteFile(path, []byte(body), 0o644)
 }
 
-// EditorCommand opens a file in $VISUAL or $EDITOR, falling back to the
-// system's default text editor.
-func EditorCommand(path string) *exec.Cmd {
+// Editor returns the editor command and where it came from, in order of
+// priority: CODEKUB_EDITOR, config.json, $VISUAL, $EDITOR. An empty command
+// means the system's default text editor.
+func (w *Workspace) Editor() (command, source string) {
+	if v := os.Getenv("CODEKUB_EDITOR"); v != "" {
+		return v, "CODEKUB_EDITOR"
+	}
+	if v := w.SavedConfig().Editor; v != "" {
+		return v, "config.json"
+	}
 	for _, key := range []string{"VISUAL", "EDITOR"} {
-		if ed := os.Getenv(key); ed != "" {
-			return exec.Command("sh", "-c", ed+` "$1"`, "editor", path)
+		if v := os.Getenv(key); v != "" {
+			return v, "$" + key
 		}
+	}
+	return "", "padrão do sistema"
+}
+
+// EditorCommand builds the command that opens path in the chosen editor.
+// The editor runs through the shell, so "code -w" or "nvim -p" work.
+func (w *Workspace) EditorCommand(path string) *exec.Cmd {
+	if ed, _ := w.Editor(); ed != "" {
+		return exec.Command("sh", "-c", ed+` "$1"`, "editor", path)
 	}
 	if runtime.GOOS == "darwin" {
 		return exec.Command("open", "-t", path)

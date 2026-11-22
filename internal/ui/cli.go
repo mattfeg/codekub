@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"strings"
 	"time"
 
@@ -14,6 +15,7 @@ import (
 	"github.com/mattfeg/codekub/internal/judge"
 	"github.com/mattfeg/codekub/internal/store"
 	"github.com/mattfeg/codekub/internal/track"
+	"github.com/mattfeg/codekub/internal/workspace"
 )
 
 func out(lines ...string) { fmt.Println(strings.Join(lines, "\n")) }
@@ -289,7 +291,15 @@ func CmdDoctor() int {
 	if env, err := core.Open(); err == nil {
 		out("  "+ok+" soluções    "+sText.Render(shortPath(env.WS.Solutions)),
 			"  "+ok+" progresso   "+sText.Render(shortPath(env.WS.DBPath())),
-			"  "+ok+" linguagem   "+sText.Render(env.Lang.Name)+sMuted.Render("  (mude com CODEKUB_LANG ou ~/.codekub/config.json)"))
+			"  "+ok+" linguagem   "+sText.Render(env.Lang.Name)+sMuted.Render("  (codekub config linguagem <id>)"))
+		ed, source := env.WS.Editor()
+		edOK := ok
+		if f := strings.Fields(ed); len(f) > 0 {
+			if _, err := exec.LookPath(f[0]); err != nil {
+				edOK = bad
+			}
+		}
+		out("  " + edOK + " editor      " + sText.Render(editorLabel(ed)) + sMuted.Render("  ("+source+"; codekub config editor <comando>)"))
 		env.Close()
 	} else {
 		out("  " + bad + " ambiente: " + err.Error())
@@ -311,6 +321,120 @@ func CmdDoctor() int {
 	}
 	out("  "+warn+" "+sMuted.Render("limite de memória não é aplicado no modo local"), "")
 	return 0
+}
+
+// editorLabel names the editor for display: its command, or the system default.
+func editorLabel(command string) string {
+	if command == "" {
+		return "editor de texto padrão do sistema"
+	}
+	return command
+}
+
+// CmdConfig shows the settings, or changes one: editor or linguagem.
+func CmdConfig(ws *workspace.Workspace, args []string) int {
+	if len(args) == 0 {
+		ed, edSource := ws.Editor()
+		langSource := "config.json"
+		if os.Getenv("CODEKUB_LANG") != "" {
+			langSource = "CODEKUB_LANG"
+		}
+		row := func(label, value, source string) string {
+			return "  " + lipgloss.NewStyle().Width(12).Render(sMuted.Render(label)) + sText.Render(value) + sFaint.Render("   ("+source+")")
+		}
+		out("", " "+sTitle.Render("CONFIGURAÇÃO")+"  "+sFaint.Render(shortPath(filepath.Join(ws.Data, "config.json"))), "",
+			row("editor", editorLabel(ed), edSource),
+			row("linguagem", languageName(ws.Config().Language), langSource),
+			row("soluções", shortPath(ws.Solutions), "CODEKUB_SOLUTIONS"),
+			row("progresso", shortPath(ws.DBPath()), "CODEKUB_HOME"), "",
+			"  "+sKey.Render("codekub config editor <comando>")+sMuted.Render("   ex.: nvim, nano, code, \"code -w\", subl"),
+			"  "+sKey.Render("codekub config editor --padrao")+sMuted.Render("    volta para $VISUAL, $EDITOR ou o do sistema"),
+			"  "+sKey.Render("codekub config linguagem <id>")+sMuted.Render("     "+languageIDs()), "")
+		return 0
+	}
+
+	cfg := ws.SavedConfig()
+	switch args[0] {
+	case "editor":
+		if len(args) < 2 {
+			return usageError("codekub config editor <comando> | --padrao")
+		}
+		if args[1] == "--padrao" {
+			cfg.Editor = ""
+		} else {
+			cfg.Editor = strings.Join(args[1:], " ")
+			bin := strings.Fields(cfg.Editor)[0]
+			if _, err := exec.LookPath(bin); err != nil {
+				return fail(fmt.Errorf("não encontrei %q no PATH; confira o nome do comando", bin))
+			}
+		}
+		if err := ws.SaveConfig(cfg); err != nil {
+			return fail(err)
+		}
+		ed, source := ws.Editor()
+		out("", "  "+fg(verdictHex["AC"]).Render("✔")+" editor: "+sText.Render(editorLabel(ed)))
+		if source == "CODEKUB_EDITOR" {
+			out("  " + fg(hexWarm).Render("!") + sMuted.Render(" a variável CODEKUB_EDITOR está definida e tem prioridade sobre esta configuração"))
+		}
+		if tip := editorTip(cfg.Editor); tip != "" {
+			out("  " + sMuted.Render(tip))
+		}
+		out("")
+		return 0
+	case "linguagem", "language":
+		if len(args) != 2 {
+			return usageError("codekub config linguagem <id>")
+		}
+		lang, err := judge.LanguageByID(args[1])
+		if err != nil {
+			return fail(fmt.Errorf("%v (disponíveis: %s)", err, languageIDs()))
+		}
+		cfg.Language = lang.ID
+		if err := ws.SaveConfig(cfg); err != nil {
+			return fail(err)
+		}
+		out("", "  "+fg(verdictHex["AC"]).Render("✔")+" linguagem: "+sText.Render(lang.Name), "")
+		return 0
+	}
+	return usageError("codekub config [editor <comando> | linguagem <id>]")
+}
+
+// editorTip explains how graphical editors interact with the TUI.
+func editorTip(command string) string {
+	fields := strings.Fields(command)
+	if len(fields) == 0 {
+		return ""
+	}
+	switch filepath.Base(fields[0]) {
+	case "code", "cursor", "subl", "zed", "idea", "mate":
+		for _, f := range fields[1:] {
+			if f == "-w" || f == "--wait" {
+				return "Com -w, o painel espera você fechar a aba do arquivo para voltar."
+			}
+		}
+		return "Editores gráficos abrem em outra janela e o painel continua livre: combine com o modo watch (w)."
+	}
+	return ""
+}
+
+func languageName(id string) string {
+	if l, err := judge.LanguageByID(id); err == nil {
+		return l.Name
+	}
+	return id + " (não suportada)"
+}
+
+func languageIDs() string {
+	var ids []string
+	for _, l := range judge.Languages() {
+		ids = append(ids, l.ID)
+	}
+	return strings.Join(ids, ", ")
+}
+
+func usageError(s string) int {
+	fmt.Fprintln(os.Stderr, "uso:", s)
+	return 2
 }
 
 func Help() string {
@@ -335,6 +459,9 @@ func Help() string {
 		cmd("test", "<n> --exemplos", "roda só os exemplos do enunciado"),
 		cmd("watch", "<n> [arquivo]", "julga de novo a cada vez que você salvar"),
 		cmd("progress", "", "mostra seu progresso"),
+		cmd("config", "", "mostra as configurações"),
+		cmd("config editor", "<comando>", "escolhe o editor (ex.: nvim, \"code -w\")"),
+		cmd("config linguagem", "<id>", "escolhe a linguagem ("+languageIDs()+")"),
 		cmd("doctor", "", "confere linguagens, isolamento e pastas"),
 		cmd("help", "", "mostra esta ajuda"),
 		"",

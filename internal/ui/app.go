@@ -15,7 +15,6 @@ import (
 	"github.com/mattfeg/codekub/internal/judge"
 	"github.com/mattfeg/codekub/internal/store"
 	"github.com/mattfeg/codekub/internal/track"
-	"github.com/mattfeg/codekub/internal/workspace"
 )
 
 type screen int
@@ -384,7 +383,7 @@ func (m *model) startWatch() tea.Cmd {
 
 func (m *model) openEditor() tea.Cmd {
 	path := m.solutionPath()
-	return tea.ExecProcess(workspace.EditorCommand(path), func(err error) tea.Msg { return editorClosedMsg{err} })
+	return tea.ExecProcess(m.env.WS.EditorCommand(path), func(err error) tea.Msg { return editorClosedMsg{err} })
 }
 
 // --- frame ------------------------------------------------------------------

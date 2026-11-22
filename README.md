@@ -33,6 +33,20 @@ Suas soluções ficam em `~/codekub/solucoes/` (criadas com um modelo quando voc
 abre um exercício) e o progresso em `~/.codekub/codekub.db`. Variáveis:
 `CODEKUB_SOLUTIONS`, `CODEKUB_HOME`, `CODEKUB_LANG` e `CODEKUB_TRACK`.
 
+## Configurar
+
+```sh
+codekub config                    # mostra as configurações e de onde vem cada uma
+codekub config editor nvim        # ou nano, micro, code, "code -w", subl…
+codekub config editor --padrao    # volta para $VISUAL, $EDITOR ou o do sistema
+codekub config linguagem python
+```
+
+O editor é escolhido nesta ordem: `CODEKUB_EDITOR`, `~/.codekub/config.json`,
+`$VISUAL`, `$EDITOR` e, por fim, o editor de texto padrão do sistema. Editores
+de terminal abrem dentro do painel e voltam quando você sai deles. Editores
+gráficos abrem em outra janela e combinam bem com o modo watch.
+
 ## Como as soluções rodam
 
 Na sua máquina, com o interpretador instalado, numa pasta temporária, com

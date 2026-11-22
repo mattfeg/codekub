@@ -2,12 +2,14 @@ package ui
 
 import (
 	"fmt"
+	"path/filepath"
 	"strings"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 
 	"github.com/mattfeg/codekub/internal/track"
+	"github.com/mattfeg/codekub/internal/workspace"
 )
 
 type problemState struct {
@@ -90,9 +92,18 @@ func (m *model) problemView(h int) string {
 		side = append(side, sMuted.Render("ainda não enviado"))
 	}
 	side = append(side, "", sFaint.Render(strings.Repeat("─", sideW-4)), "",
-		sKey.Render("e")+"  "+sText.Render("abrir no editor"),
+		sKey.Render("e")+"  "+sText.Render("abrir no editor")+sFaint.Render(" ("+editorName(m.env.WS)+")"),
 		sKey.Render("s")+"  "+sText.Render("enviar a solução"),
 		sKey.Render("x")+"  "+sText.Render("testar só os exemplos"),
 		sKey.Render("w")+"  "+sText.Render("modo watch"))
 	return lipgloss.JoinHorizontal(lipgloss.Top, statement, "  ", panel(hexBorder).Width(sideW).Render(strings.Join(side, "\n")))
+}
+
+// editorName is the short name shown next to the "e" key.
+func editorName(ws *workspace.Workspace) string {
+	ed, _ := ws.Editor()
+	if f := strings.Fields(ed); len(f) > 0 {
+		return filepath.Base(f[0])
+	}
+	return "padrão"
 }

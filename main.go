@@ -8,6 +8,7 @@ import (
 
 	"github.com/mattfeg/codekub/internal/core"
 	"github.com/mattfeg/codekub/internal/ui"
+	"github.com/mattfeg/codekub/internal/workspace"
 )
 
 func main() {
@@ -25,6 +26,13 @@ func run(args []string) int {
 		return 0
 	case "doctor":
 		return ui.CmdDoctor()
+	case "config": // works even when the saved settings are broken
+		ws, err := workspace.Default()
+		if err != nil {
+			fmt.Fprintln(os.Stderr, "codekub:", err)
+			return 2
+		}
+		return ui.CmdConfig(ws, args[1:])
 	}
 
 	env, err := core.Open()
