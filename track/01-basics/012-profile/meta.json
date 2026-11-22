@@ -1,0 +1,11 @@
+{
+  "id": "012",
+  "slug": "profile",
+  "title": "Ficha cadastral",
+  "topic": "input",
+  "level": 2,
+  "concepts": ["entrada", "texto e números", "conversão de tipos"],
+  "time_limit": 1.0,
+  "samples": 2,
+  "source": {"name": "codekub", "author": "Matheus Ferreira", "license": "CC BY 4.0"}
+}
