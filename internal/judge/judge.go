@@ -1,17 +1,17 @@
 package judge
 
 import (
+	"bytes"
 	"context"
 	"fmt"
-	"os"
 	"strconv"
 	"strings"
 	"time"
 )
 
 type TestCase struct {
-	InputPath, OutputPath string
-	Sample                bool
+	Input, Output []byte
+	Sample        bool
 }
 
 type Request struct {
@@ -138,18 +138,10 @@ func Run(ctx context.Context, runner Runner, req Request, emit func(Event)) Resu
 
 // runTest returns nil when the run was canceled.
 func runTest(ctx context.Context, ws Workspace, i int, tc TestCase, limit time.Duration) (*TestResult, error) {
-	input, err := os.ReadFile(tc.InputPath)
-	if err != nil {
-		return nil, err
-	}
-	want, err := os.ReadFile(tc.OutputPath)
-	if err != nil {
-		return nil, err
-	}
-	ex := ws.Exec(ctx, strings.NewReader(string(input)), limit)
+	ex := ws.Exec(ctx, bytes.NewReader(tc.Input), limit)
 	tr := &TestResult{Index: i, Sample: tc.Sample, Time: ex.Elapsed}
 	if tc.Sample {
-		tr.Input = string(input)
+		tr.Input = string(tc.Input)
 	}
 	switch {
 	case ex.Canceled:
@@ -166,7 +158,7 @@ func runTest(ctx context.Context, ws Workspace, i int, tc TestCase, limit time.D
 		tr.Verdict = RE
 		tr.Detail = runtimeDetail(ex)
 	default:
-		tr.Verdict, tr.Diff = Compare(ex.Stdout, string(want))
+		tr.Verdict, tr.Diff = Compare(ex.Stdout, string(tc.Output))
 	}
 	return tr, nil
 }

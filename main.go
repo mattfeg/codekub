@@ -7,11 +7,17 @@ import (
 	"os"
 
 	"github.com/mattfeg/codekub/internal/core"
+	"github.com/mattfeg/codekub/internal/track"
 	"github.com/mattfeg/codekub/internal/ui"
 	"github.com/mattfeg/codekub/internal/workspace"
 )
 
+// version is set at release time with -ldflags "-X main.version=...".
+var version = "dev"
+
 func main() {
+	ui.Version = version
+	track.Embedded = embeddedTrack()
 	os.Exit(run(os.Args[1:]))
 }
 
@@ -23,6 +29,9 @@ func run(args []string) int {
 	switch cmd {
 	case "help", "-h", "--help":
 		fmt.Println(ui.Help())
+		return 0
+	case "version", "--version", "-v":
+		fmt.Println("codekub", version)
 		return 0
 	case "doctor":
 		return ui.CmdDoctor()

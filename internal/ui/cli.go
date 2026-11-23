@@ -18,6 +18,9 @@ import (
 	"github.com/mattfeg/codekub/internal/workspace"
 )
 
+// Version is the codekub version, set by package main.
+var Version = "dev"
+
 func out(lines ...string) { fmt.Println(strings.Join(lines, "\n")) }
 
 // isTerminal tells whether stdout is a terminal, where live line updates work.
@@ -280,13 +283,13 @@ func CmdDoctor() int {
 	ok := fg(verdictHex["AC"]).Render("✔")
 	bad := fg(verdictHex["WA"]).Render("✘")
 	warn := fg(hexWarm).Render("!")
-	out("", " "+mascot("idle", 10)+"  "+sTitle.Render("DIAGNÓSTICO"), "")
-	if root, err := track.Find(); err != nil {
+	out("", " "+mascot("idle", 10)+"  "+sTitle.Render("DIAGNÓSTICO")+sFaint.Render("  codekub "+Version), "")
+	if fsys, source, err := track.Find(); err != nil {
 		out("  " + bad + " trilha: " + err.Error())
-	} else if tr, err := track.Load(root); err != nil {
+	} else if tr, err := track.Load(fsys, source); err != nil {
 		out("  " + bad + " trilha: " + err.Error())
 	} else {
-		out(fmt.Sprintf("  %s trilha      %s %s", ok, sText.Render(shortPath(root)), sMuted.Render(fmt.Sprintf("(%d exercícios)", len(tr.Exercises())))))
+		out(fmt.Sprintf("  %s trilha      %s %s", ok, sText.Render(shortPath(source)), sMuted.Render(fmt.Sprintf("(%d exercícios)", len(tr.Exercises())))))
 	}
 	if env, err := core.Open(); err == nil {
 		out("  "+ok+" soluções    "+sText.Render(shortPath(env.WS.Solutions)),
@@ -445,7 +448,7 @@ func Help() string {
 	ex := func(s string) string { return "  " + sFaint.Render("$ ") + sText.Render(s) }
 	return strings.Join([]string{
 		"",
-		" " + mascot("idle", 10) + "  " + gradient("codekub", hexPrimary, hexMint, 0) + sMuted.Render("  ·  by Matheus Ferreira"),
+		" " + mascot("idle", 10) + "  " + gradient("codekub", hexPrimary, hexMint, 0) + sFaint.Render(" "+Version) + sMuted.Render("  ·  by Matheus Ferreira"),
 		"",
 		sTitle.Render(" USO"),
 		"  " + sBold.Render("codekub") + " " + arg.Render("[comando] [argumentos]"),
@@ -463,6 +466,7 @@ func Help() string {
 		cmd("config editor", "<comando>", "escolhe o editor (ex.: nvim, \"code -w\")"),
 		cmd("config linguagem", "<id>", "escolhe a linguagem ("+languageIDs()+")"),
 		cmd("doctor", "", "confere linguagens, isolamento e pastas"),
+		cmd("version", "", "mostra a versão"),
 		cmd("help", "", "mostra esta ajuda"),
 		"",
 		sTitle.Render(" EXEMPLOS"),

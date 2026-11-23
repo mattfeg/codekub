@@ -4,6 +4,7 @@ import (
 	"context"
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
 	"testing"
 	"time"
@@ -40,16 +41,11 @@ func TestCompare(t *testing.T) {
 	}
 }
 
-// sumTests writes a tiny "add two numbers" exercise and returns its tests.
+// sumTests is a tiny "add two numbers" exercise.
 func sumTests(t *testing.T) []TestCase {
-	dir := t.TempDir()
 	var tests []TestCase
 	for i, c := range [][2]string{{"3 5\n", "8\n"}, {"-1 1\n", "0\n"}, {"10 20\n", "30\n"}} {
-		in := filepath.Join(dir, string(rune('a'+i))+".in")
-		out := filepath.Join(dir, string(rune('a'+i))+".out")
-		os.WriteFile(in, []byte(c[0]), 0o644)
-		os.WriteFile(out, []byte(c[1]), 0o644)
-		tests = append(tests, TestCase{InputPath: in, OutputPath: out, Sample: i == 0})
+		tests = append(tests, TestCase{Input: []byte(c[0]), Output: []byte(c[1]), Sample: i == 0})
 	}
 	return tests
 }
@@ -101,6 +97,9 @@ func TestRuntimeErrorShowsMessage(t *testing.T) {
 }
 
 func TestTimeLimitKillsChildren(t *testing.T) {
+	if runtime.GOOS == "windows" {
+		t.Skip("the child uses sleep and touch")
+	}
 	marker := filepath.Join(t.TempDir(), "still-alive")
 	code := "pid = spawn('sleep 3; touch " + marker + "')\nsleep 10\n"
 	start := time.Now()

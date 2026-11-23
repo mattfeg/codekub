@@ -26,11 +26,11 @@ type Env struct {
 }
 
 func Open() (*Env, error) {
-	root, err := track.Find()
+	fsys, source, err := track.Find()
 	if err != nil {
 		return nil, err
 	}
-	tr, err := track.Load(root)
+	tr, err := track.Load(fsys, source)
 	if err != nil {
 		return nil, err
 	}

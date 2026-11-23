@@ -2,15 +2,18 @@ package track
 
 import (
 	"context"
+	"os"
 	"path/filepath"
 	"testing"
 
 	"github.com/mattfeg/codekub/internal/judge"
 )
 
+const repoTrack = "../../track"
+
 func loadRepoTrack(t *testing.T) *Track {
 	t.Helper()
-	tr, err := Load(filepath.Join("..", "..", "track"))
+	tr, err := Load(os.DirFS(repoTrack), repoTrack)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -53,7 +56,7 @@ func TestReferenceSolutionsAreAccepted(t *testing.T) {
 				t.Fatal(err)
 			}
 			res := judge.Run(context.Background(), judge.LocalRunner{}, judge.Request{
-				Lang: ruby, Source: filepath.Join(e.Dir, "reference.rb"), Tests: tests, TimeLimit: e.Limit(),
+				Lang: ruby, Source: filepath.Join(repoTrack, filepath.FromSlash(e.Dir), "reference.rb"), Tests: tests, TimeLimit: e.Limit(),
 			}, nil)
 			if res.Verdict != judge.AC {
 				t.Fatalf("%s: %s (%s) %+v", e.Key(), res.Verdict, res.Detail, res.Tests)

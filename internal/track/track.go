@@ -1,13 +1,16 @@
-// Package track loads the exercise track from disk: phases (phase.json) and
-// their exercises (meta.json, statement.md, tests/).
+// Package track loads the exercise track: phases (phase.json) and their
+// exercises (meta.json, statement.md, tests/). The track usually comes
+// embedded in the binary; CODEKUB_TRACK points at a folder on disk instead,
+// which is how exercises are developed.
 package track
 
 import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io/fs"
 	"os"
-	"path/filepath"
+	"path"
 	"regexp"
 	"sort"
 	"strconv"
@@ -17,8 +20,11 @@ import (
 	"github.com/mattfeg/codekub/internal/judge"
 )
 
+// Embedded is the track compiled into the binary, set by package main.
+var Embedded fs.FS
+
 type Track struct {
-	Root   string
+	Source string // where the track came from, for display
 	Phases []*Phase
 }
 
@@ -29,7 +35,7 @@ type Phase struct {
 	Description string  `json:"description"`
 	Topics      []Topic `json:"topics"`
 	Exercises   []*Exercise
-	Dir         string
+	Dir         string // slash-separated path inside the track
 }
 
 type Topic struct {
@@ -48,8 +54,9 @@ type Exercise struct {
 	Samples   int      `json:"samples"`
 	Rating    int      `json:"rating"`
 	Source    Source   `json:"source"`
-	Dir       string
+	Dir       string   // slash-separated path inside the track
 	Phase     *Phase
+	fsys      fs.FS
 }
 
 type Source struct {
@@ -61,52 +68,37 @@ type Source struct {
 	Changes string `json:"changes"`
 }
 
-// Find locates the track directory: $CODEKUB_TRACK, then a track/ folder in
-// the current directory or any parent, then one next to the executable.
-func Find() (string, error) {
+// Find picks the track: the folder in $CODEKUB_TRACK, or the embedded one.
+func Find() (fs.FS, string, error) {
 	if dir := os.Getenv("CODEKUB_TRACK"); dir != "" {
-		return dir, nil
-	}
-	var starts []string
-	if wd, err := os.Getwd(); err == nil {
-		starts = append(starts, wd)
-	}
-	if exe, err := os.Executable(); err == nil {
-		if real, err := filepath.EvalSymlinks(exe); err == nil {
-			starts = append(starts, filepath.Dir(real))
+		if _, err := os.Stat(dir); err != nil {
+			return nil, "", fmt.Errorf("CODEKUB_TRACK: %w", err)
 		}
+		return os.DirFS(dir), dir, nil
 	}
-	for _, start := range starts {
-		for dir := start; ; dir = filepath.Dir(dir) {
-			candidate := filepath.Join(dir, "track")
-			if matches, _ := filepath.Glob(filepath.Join(candidate, "*", "phase.json")); len(matches) > 0 {
-				return candidate, nil
-			}
-			if filepath.Dir(dir) == dir {
-				break
-			}
-		}
+	if Embedded != nil {
+		return Embedded, "embutida no codekub", nil
 	}
-	return "", errors.New("não encontrei a pasta track/ (rode dentro do projeto codekub ou defina CODEKUB_TRACK)")
+	return nil, "", errors.New("nenhuma trilha disponível (defina CODEKUB_TRACK)")
 }
 
-func Load(root string) (*Track, error) {
-	phaseFiles, err := filepath.Glob(filepath.Join(root, "*", "phase.json"))
+func Load(fsys fs.FS, source string) (*Track, error) {
+	phaseFiles, err := fs.Glob(fsys, "*/phase.json")
 	if err != nil || len(phaseFiles) == 0 {
-		return nil, fmt.Errorf("nenhuma fase encontrada em %s", root)
+		return nil, fmt.Errorf("nenhuma fase encontrada em %s", source)
 	}
 	sort.Strings(phaseFiles)
-	t := &Track{Root: root}
+	t := &Track{Source: source}
 	for _, pf := range phaseFiles {
-		p := &Phase{Dir: filepath.Dir(pf)}
-		if err := readJSON(pf, p); err != nil {
+		p := &Phase{Dir: path.Dir(pf)}
+		if err := readJSON(fsys, pf, p); err != nil {
 			return nil, err
 		}
-		metas, _ := filepath.Glob(filepath.Join(p.Dir, "*", "meta.json"))
+		metas, _ := fs.Glob(fsys, path.Join(p.Dir, "*", "meta.json"))
 		sort.Strings(metas)
 		for _, mf := range metas {
-			e := &Exercise{Dir: filepath.Dir(mf), Phase: p, TimeLimit: 1, Samples: 1}
-			if err := readJSON(mf, e); err != nil {
+			e := &Exercise{Dir: path.Dir(mf), Phase: p, TimeLimit: 1, Samples: 1, fsys: fsys}
+			if err := readJSON(fsys, mf, e); err != nil {
 				return nil, err
 			}
 			p.Exercises = append(p.Exercises, e)
@@ -116,13 +108,13 @@ func Load(root string) (*Track, error) {
 	return t, nil
 }
 
-func readJSON(path string, v any) error {
-	data, err := os.ReadFile(path)
+func readJSON(fsys fs.FS, name string, v any) error {
+	data, err := fs.ReadFile(fsys, name)
 	if err != nil {
 		return err
 	}
 	if err := json.Unmarshal(data, v); err != nil {
-		return fmt.Errorf("%s: %w", path, err)
+		return fmt.Errorf("%s: %w", name, err)
 	}
 	return nil
 }
@@ -163,25 +155,33 @@ func (e *Exercise) TopicTitle() string {
 }
 
 func (e *Exercise) Statement() (string, error) {
-	data, err := os.ReadFile(filepath.Join(e.Dir, "statement.md"))
+	data, err := fs.ReadFile(e.fsys, path.Join(e.Dir, "statement.md"))
 	return string(data), err
 }
 
 var digits = regexp.MustCompile(`\d+`)
 
 func (e *Exercise) Tests() ([]judge.TestCase, error) {
-	ins, _ := filepath.Glob(filepath.Join(e.Dir, "tests", "*.in"))
+	ins, _ := fs.Glob(e.fsys, path.Join(e.Dir, "tests", "*.in"))
 	if len(ins) == 0 {
 		return nil, fmt.Errorf("%s não tem testes", e.Key())
 	}
 	sort.Slice(ins, func(i, j int) bool {
-		a, _ := strconv.Atoi(digits.FindString(filepath.Base(ins[i])))
-		b, _ := strconv.Atoi(digits.FindString(filepath.Base(ins[j])))
+		a, _ := strconv.Atoi(digits.FindString(path.Base(ins[i])))
+		b, _ := strconv.Atoi(digits.FindString(path.Base(ins[j])))
 		return a < b
 	})
 	tests := make([]judge.TestCase, len(ins))
 	for i, in := range ins {
-		tests[i] = judge.TestCase{InputPath: in, OutputPath: strings.TrimSuffix(in, ".in") + ".out", Sample: i < e.Samples}
+		input, err := fs.ReadFile(e.fsys, in)
+		if err != nil {
+			return nil, err
+		}
+		output, err := fs.ReadFile(e.fsys, strings.TrimSuffix(in, ".in")+".out")
+		if err != nil {
+			return nil, err
+		}
+		tests[i] = judge.TestCase{Input: input, Output: output, Sample: i < e.Samples}
 	}
 	return tests, nil
 }
