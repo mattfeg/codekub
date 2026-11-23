@@ -218,18 +218,20 @@ func TestSettingsThroughTheTUI(t *testing.T) {
 		h.key("enter")
 	}
 
-	// Custom command: global keys like q must become text while typing.
+	// Custom command: global keys like q must become text while typing. The
+	// command typed is an editor installed here (Windows has no vi).
+	installed := strings.Fields(h.m.editorOptions()[1].value)[0]
 	openCustom()
-	for _, r := range "viq" {
+	for _, r := range installed + "q" {
 		h.key(string(r))
 	}
-	if h.m.screen != scrSettings || h.m.set.input != "viq" {
+	if h.m.screen != scrSettings || h.m.set.input != installed+"q" {
 		t.Fatalf("typing should capture keys, input %q", h.m.set.input)
 	}
 	h.key("backspace")
 	h.key("enter")
-	if got := env.WS.SavedConfig().Editor; got != "vi" {
-		t.Fatalf("custom editor saved as %q", got)
+	if got := env.WS.SavedConfig().Editor; got != installed {
+		t.Fatalf("custom editor saved as %q, want %q", got, installed)
 	}
 
 	// A command that does not exist is refused.
@@ -238,7 +240,7 @@ func TestSettingsThroughTheTUI(t *testing.T) {
 		h.key(string(r))
 	}
 	h.key("enter")
-	if got := env.WS.SavedConfig().Editor; got != "vi" {
+	if got := env.WS.SavedConfig().Editor; got != installed {
 		t.Fatalf("a missing command must not be saved, got %q", got)
 	}
 	h.key("esc")
