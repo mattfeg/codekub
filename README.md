@@ -9,12 +9,35 @@ TLE, RE, CE).
 
 ## Instalar
 
-Requer Go 1.22+ e a linguagem que você vai praticar (hoje: Ruby ou Python).
+Você precisa da linguagem que vai praticar instalada: hoje, Ruby ou Python.
+
+**macOS e Linux** (Homebrew):
 
 ```sh
-go build -o codekub .
-./codekub doctor   # confere linguagens, isolamento e pastas
+brew install mattfeg/tap/codekub
 ```
+
+**Windows:** baixe `codekub_<versão>_windows_amd64.zip` (ou `arm64`) em
+[Releases](https://github.com/mattfeg/codekub/releases), extraia o
+`codekub.exe` para uma pasta e coloque essa pasta no PATH. No PowerShell:
+
+```powershell
+$dir = "$env:LOCALAPPDATA\codekub"
+New-Item -ItemType Directory -Force $dir | Out-Null
+Expand-Archive codekub_*_windows_amd64.zip -DestinationPath $dir -Force
+[Environment]::SetEnvironmentVariable("Path", "$env:Path;$dir", "User")
+```
+
+Abra um terminal novo (de preferência o Windows Terminal) e rode
+`codekub doctor`. Para Ruby no Windows, use o [RubyInstaller](https://rubyinstaller.org).
+
+**Com Go instalado**, em qualquer sistema:
+
+```sh
+go install github.com/mattfeg/codekub@latest
+```
+
+Depois de instalar, `codekub doctor` confere linguagens, isolamento e pastas.
 
 ## Usar
 
@@ -53,9 +76,23 @@ gráficos abrem em outra janela e combinam bem com o modo watch.
 ## Como as soluções rodam
 
 Na sua máquina, com o interpretador instalado, numa pasta temporária, com
-limite de tempo (por linguagem), limite de saída e um ambiente mínimo. No
-macOS, também dentro do `sandbox-exec`: sem rede e sem escrita fora da pasta
-temporária. Não há limite de memória no modo local.
+limite de tempo (por linguagem), limite de saída e encerramento de todos os
+processos que a solução criar. No macOS, também dentro do `sandbox-exec`: sem
+rede e sem escrita fora da pasta temporária. No Linux e no Windows não há
+sandbox, e em nenhum sistema há limite de memória no modo local.
+
+## Desenvolver
+
+```sh
+go build -o codekub .
+CODEKUB_TRACK=./track ./codekub    # usa a trilha do disco em vez da embutida
+ruby tools/build_tests.rb          # regenera os testes depois de editar exercícios
+```
+
+A trilha (enunciados, metadados e testes) vai embutida no binário; as soluções
+de referência e os geradores ficam só no repositório. Uma versão é publicada
+criando uma tag `vX.Y.Z`: o GitHub Actions gera os binários e atualiza o
+Homebrew.
 
 ## Estrutura
 
@@ -70,6 +107,7 @@ internal/ui                 painel (Bubble Tea) e saída dos comandos
 
 ## Conteúdo e licenças
 
-Os exercícios originais são de Matheus Ferreira, sob CC BY 4.0. Os chefões
-são adaptados do Codeforces via o dataset `open-r1/codeforces` (CC BY 4.0), com
-crédito no enunciado e no `meta.json` de cada um.
+O código está sob a licença MIT (`LICENSE`). Os exercícios originais são de
+Matheus Ferreira, sob CC BY 4.0 (`track/LICENSE.md`). Os chefões são adaptados
+do Codeforces via o dataset `open-r1/codeforces` (CC BY 4.0), com crédito no
+enunciado e no `meta.json` de cada um.

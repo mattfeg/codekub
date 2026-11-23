@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    name: test (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      # The judge tests run real Ruby and Python solutions.
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: go vet ./...
+      - run: go test ./...
+      - run: go build -o codekub-ci .
+        shell: bash
+      - name: Smoke test with the embedded track
+        shell: bash
+        run: |
+          export CODEKUB_HOME="$RUNNER_TEMP/home" CODEKUB_SOLUTIONS="$RUNNER_TEMP/sol"
+          ./codekub-ci version
+          ./codekub-ci doctor
+          ./codekub-ci next
+          printf 'puts "Olá, mundo!"\n' > "$CODEKUB_SOLUTIONS/001-hello-world.rb"
+          ./codekub-ci test 1
