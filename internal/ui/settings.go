@@ -41,6 +41,7 @@ var knownEditors = []struct{ cmd, detail string }{
 	{"code", "gráfico · abre em outra janela"}, {"code -w", "gráfico · espera fechar a aba"},
 	{"cursor", "gráfico · abre em outra janela"}, {"subl", "gráfico · abre em outra janela"},
 	{"zed", "gráfico · abre em outra janela"},
+	{"notepad", "Bloco de Notas · Windows"}, {"notepad++", "gráfico · Windows"},
 }
 
 func (s *settingsState) enter() {

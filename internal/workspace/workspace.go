@@ -9,6 +9,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"runtime"
+	"strings"
 
 	"github.com/mattfeg/codekub/internal/judge"
 	"github.com/mattfeg/codekub/internal/track"
@@ -122,12 +123,20 @@ func (w *Workspace) Editor() (command, source string) {
 }
 
 // EditorCommand builds the command that opens path in the chosen editor.
-// The editor runs through the shell, so "code -w" or "nvim -p" work.
+// On Unix the editor runs through the shell, so "code -w" or "nvim -p" work;
+// Windows has no sh, so the command is split on spaces and run directly.
+// Either way, path reaches the editor as a single argument.
 func (w *Workspace) EditorCommand(path string) *exec.Cmd {
-	if ed, _ := w.Editor(); ed != "" {
+	ed, _ := w.Editor()
+	switch {
+	case ed != "" && runtime.GOOS == "windows":
+		f := strings.Fields(ed)
+		return exec.Command(f[0], append(f[1:], path)...)
+	case ed != "":
 		return exec.Command("sh", "-c", ed+` "$1"`, "editor", path)
-	}
-	if runtime.GOOS == "darwin" {
+	case runtime.GOOS == "windows":
+		return exec.Command("notepad", path)
+	case runtime.GOOS == "darwin":
 		return exec.Command("open", "-t", path)
 	}
 	return exec.Command("xdg-open", path)

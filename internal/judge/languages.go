@@ -3,6 +3,7 @@ package judge
 import (
 	"fmt"
 	"path/filepath"
+	"runtime"
 	"strings"
 )
 
@@ -20,6 +21,17 @@ type Language struct {
 	Comment    string // line comment prefix, used by solution templates
 }
 
+// python is "python" on Windows, where "python3" often opens the Microsoft
+// Store instead of an interpreter.
+var python = pythonCommand()
+
+func pythonCommand() string {
+	if runtime.GOOS == "windows" {
+		return "python"
+	}
+	return "python3"
+}
+
 var languages = []Language{
 	{
 		ID: "ruby", Name: "Ruby", Ext: ".rb",
@@ -28,8 +40,8 @@ var languages = []Language{
 	},
 	{
 		ID: "python", Name: "Python", Ext: ".py",
-		Check: []string{"python3", "-m", "py_compile", "{src}"}, Run: []string{"python3", "{src}"},
-		TimeFactor: 3, Version: []string{"python3", "--version"}, Comment: "#",
+		Check: []string{python, "-m", "py_compile", "{src}"}, Run: []string{python, "{src}"},
+		TimeFactor: 3, Version: []string{python, "--version"}, Comment: "#",
 	},
 }
 

@@ -3,6 +3,7 @@ package workspace
 import (
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
 	"testing"
 )
@@ -60,6 +61,9 @@ func TestSaveConfigKeepsEnvOverridesOut(t *testing.T) {
 }
 
 func TestEditorCommandPassesPathSafely(t *testing.T) {
+	if runtime.GOOS == "windows" {
+		t.Skip("uses printf through sh")
+	}
 	w := newWorkspace(t)
 	w.SaveConfig(Config{Language: "ruby", Editor: "printf '%s'"})
 	path := filepath.Join(t.TempDir(), "nome com espaço; e $(perigo).rb")

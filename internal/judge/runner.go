@@ -9,10 +9,8 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
-	"runtime"
 	"strings"
 	"sync"
-	"syscall"
 	"time"
 )
 
@@ -115,13 +113,13 @@ func (w *localWorkspace) exec(ctx context.Context, argv []string, stdin io.Reade
 	cmd.Dir = w.dir
 	cmd.Env = childEnv(w.dir)
 	cmd.Stdin = stdin
-	cmd.SysProcAttr = &syscall.SysProcAttr{Setpgid: true}
+	isolateProcess(cmd)
 
 	var killOnce sync.Once
 	kill := func() {
 		killOnce.Do(func() {
 			if cmd.Process != nil {
-				syscall.Kill(-cmd.Process.Pid, syscall.SIGKILL)
+				killTree(cmd)
 			}
 		})
 	}
@@ -154,37 +152,12 @@ func (w *localWorkspace) exec(ctx context.Context, argv []string, stdin io.Reade
 		kill()
 		<-done
 	}
-	kill() // leftovers the solution may have spawned
+	cleanupAfterExit(cmd) // leftovers the solution may have spawned
 
 	ex.Stdout, ex.Stderr = stdout.String(), stderr.String()
 	ex.OutputExceeded = stdout.Exceeded()
-	if ws, ok := cmd.ProcessState.Sys().(syscall.WaitStatus); ok {
-		if ws.Signaled() {
-			ex.Signal = ws.Signal().String()
-		} else {
-			ex.ExitCode = ws.ExitStatus()
-		}
-	}
+	ex.ExitCode, ex.Signal = exitStatus(cmd.ProcessState)
 	return ex
-}
-
-// childEnv passes only what interpreters and version managers need.
-func childEnv(dir string) []string {
-	env := []string{"TMPDIR=" + dir}
-	for _, kv := range os.Environ() {
-		key := strings.SplitN(kv, "=", 2)[0]
-		switch {
-		case key == "PATH", key == "HOME", key == "USER",
-			strings.HasPrefix(key, "MISE_"), strings.HasPrefix(key, "RBENV_"),
-			strings.HasPrefix(key, "ASDF_"), strings.HasPrefix(key, "PYENV_"):
-			env = append(env, kv)
-		}
-	}
-	locale := "C.UTF-8"
-	if runtime.GOOS == "darwin" {
-		locale = "en_US.UTF-8"
-	}
-	return append(env, "LANG="+locale, "LC_ALL="+locale)
 }
 
 type limitedBuffer struct {
