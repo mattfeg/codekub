@@ -54,5 +54,7 @@ def build(dir)
   puts format("  %-32s %2d teste(s)", File.basename(dir), inputs.size)
 end
 
-dirs = ARGV.empty? ? Dir[File.join(ROOT, "track/*/*/meta.json")].map { |m| File.dirname(m) } : ARGV
+# By default, every exercise that has a reference solution (imported beecrowd
+# problems without one keep the tests they came with).
+dirs = ARGV.empty? ? Dir[File.join(ROOT, "track/*/*/reference.rb")].map { |m| File.dirname(m) } : ARGV
 dirs.sort.each { |d| build(File.expand_path(d)) }
