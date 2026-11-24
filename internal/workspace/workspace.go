@@ -141,3 +141,14 @@ func (w *Workspace) EditorCommand(path string) *exec.Cmd {
 	}
 	return exec.Command("xdg-open", path)
 }
+
+// BrowserCommand builds the command that opens url in the default browser.
+func BrowserCommand(url string) *exec.Cmd {
+	switch runtime.GOOS {
+	case "windows":
+		return exec.Command("rundll32", "url.dll,FileProtocolHandler", url)
+	case "darwin":
+		return exec.Command("open", url)
+	}
+	return exec.Command("xdg-open", url)
+}

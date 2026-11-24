@@ -132,6 +132,8 @@ func (m *model) judgeKey(key string) tea.Cmd {
 		return m.startJudge(true)
 	case "e":
 		return m.openEditor()
+	case "o":
+		return m.openSource()
 	case "w":
 		if j.watch {
 			j.stopWatch()

@@ -42,6 +42,15 @@ func shortPath(p string) string {
 	return p
 }
 
+// placeLine says where the exercise sits: "phase · topic", or just the topic
+// when the phase has a single one.
+func placeLine(ex *track.Exercise) string {
+	if len(ex.Phase.Topics) <= 1 {
+		return ex.TopicTitle()
+	}
+	return ex.Phase.Title + " · " + ex.TopicTitle()
+}
+
 func exerciseLine(ex *track.Exercise) string {
 	return sFaint.Render(ex.ID) + "  " + sBold.Render(ex.Title) + "  " + stars(ex.Level)
 }
@@ -151,7 +160,7 @@ func CmdNext(env *core.Env) int {
 	card := panel(hexPrimary).Width(62).Render(strings.Join([]string{
 		sTitle.Render("PRÓXIMO EXERCÍCIO"), "",
 		exerciseLine(ex),
-		sMuted.Render(ex.Phase.Title + " · " + ex.TopicTitle()), "",
+		sMuted.Render(placeLine(ex)), "",
 		sMuted.Render("solução  ") + sText.Render(shortPath(path)), "",
 		sKey.Render("codekub show "+strings.TrimLeft(ex.ID, "0")) + sMuted.Render("   ler o enunciado"),
 		sKey.Render("codekub watch "+strings.TrimLeft(ex.ID, "0")) + sMuted.Render("  julgar a cada salvamento"),
@@ -212,7 +221,30 @@ func CmdShow(env *core.Env, ref string) int {
 	path, _ := env.WS.EnsureSolution(ex, env.Lang)
 	out(renderStatement(md, 80, !isTerminal()), "",
 		"  "+sMuted.Render("solução  ")+sText.Render(shortPath(path)),
-		"  "+sMuted.Render("limite   ")+sText.Render(limitText(ex, env.Lang))+"   "+stars(ex.Level), "")
+		"  "+sMuted.Render("limite   ")+sText.Render(limitText(ex, env.Lang))+"   "+stars(ex.Level))
+	if ex.Source.URL != "" {
+		out("  " + sMuted.Render("página   ") + sText.Render(ex.Source.URL) + sFaint.Render("   (codekub open "+strings.TrimLeft(ex.ID, "0")+")"))
+	}
+	out("")
+	return 0
+}
+
+// CmdOpen opens the exercise's original page in the browser.
+func CmdOpen(env *core.Env, ref string) int {
+	ex, err := env.Track.Lookup(ref)
+	if err != nil {
+		return fail(err)
+	}
+	if ex.Source.URL == "" {
+		return fail(fmt.Errorf("%s não tem página original", ex.Key()))
+	}
+	if err := workspace.BrowserCommand(ex.Source.URL).Run(); err != nil {
+		return fail(fmt.Errorf("não consegui abrir o navegador: %w", err))
+	}
+	path, _ := env.WS.EnsureSolution(ex, env.Lang)
+	out("", " "+exerciseLine(ex),
+		"  "+sMuted.Render("página   ")+sText.Render(ex.Source.URL),
+		"  "+sMuted.Render("solução  ")+sText.Render(shortPath(path)), "")
 	return 0
 }
 
@@ -461,6 +493,7 @@ func Help() string {
 		cmd("test", "<n> [arquivo]", "julga sua solução do exercício n"),
 		cmd("test", "<n> --exemplos", "roda só os exemplos do enunciado"),
 		cmd("watch", "<n> [arquivo]", "julga de novo a cada vez que você salvar"),
+		cmd("open", "<n>", "abre a página original do exercício"),
 		cmd("progress", "", "mostra seu progresso"),
 		cmd("config", "", "mostra as configurações"),
 		cmd("config editor", "<comando>", "escolhe o editor (ex.: nvim, \"code -w\")"),
@@ -470,8 +503,8 @@ func Help() string {
 		cmd("help", "", "mostra esta ajuda"),
 		"",
 		sTitle.Render(" EXEMPLOS"),
-		ex("codekub test 13"),
-		ex("codekub watch 13 ~/meus-codigos/media.rb"),
+		ex("codekub test 1001"),
+		ex("codekub watch 1001 ~/meus-codigos/soma.rb"),
 		"",
 		sTitle.Render(" ONDE FICAM AS COISAS"),
 		"  " + sMuted.Render("soluções   ") + sText.Render("~/codekub/solucoes/<número>-<nome>.rb") + sFaint.Render("   (CODEKUB_SOLUTIONS)"),

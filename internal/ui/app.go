@@ -15,6 +15,7 @@ import (
 	"github.com/mattfeg/codekub/internal/judge"
 	"github.com/mattfeg/codekub/internal/store"
 	"github.com/mattfeg/codekub/internal/track"
+	"github.com/mattfeg/codekub/internal/workspace"
 )
 
 type screen int
@@ -52,9 +53,10 @@ type (
 		sub core.Submission
 		err error
 	}
-	fileChangedMsg  struct{ gen int }
-	debounceMsg     struct{ seq int }
-	editorClosedMsg struct{ err error }
+	fileChangedMsg   struct{ gen int }
+	debounceMsg      struct{ seq int }
+	editorClosedMsg  struct{ err error }
+	browserOpenedMsg struct{ err error }
 )
 
 func tick() tea.Cmd {
@@ -222,6 +224,10 @@ func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case editorClosedMsg:
 		if msg.err != nil {
 			m.notify("não consegui abrir o editor")
+		}
+	case browserOpenedMsg:
+		if msg.err != nil {
+			m.notify("não consegui abrir o navegador")
 		}
 	}
 	return m, nil
@@ -395,6 +401,17 @@ func (m *model) openEditor() tea.Cmd {
 	return tea.ExecProcess(m.env.WS.EditorCommand(path), func(err error) tea.Msg { return editorClosedMsg{err} })
 }
 
+// openSource opens the exercise's original page, when it has one.
+func (m *model) openSource() tea.Cmd {
+	url := m.prob.ex.Source.URL
+	if url == "" {
+		m.notify("este exercício não tem página original")
+		return nil
+	}
+	m.notify("abrindo no navegador")
+	return func() tea.Msg { return browserOpenedMsg{workspace.BrowserCommand(url).Run()} }
+}
+
 // --- frame ------------------------------------------------------------------
 
 func (m *model) View() string {
@@ -471,7 +488,7 @@ func (m *model) footerView() string {
 	case scrTrack:
 		help = helpLine("↑↓", "navegar", "→ enter", "abrir", "←", "voltar", "tab", "abas", "q", "sair")
 	case scrProblem:
-		help = helpLine("↑↓", "rolar", "e", "editar", "s", "enviar", "x", "exemplos", "w", "watch", "esc", "voltar")
+		help = helpLine("o", "enunciado", "↑↓", "rolar", "e", "editar", "s", "enviar", "x", "exemplos", "w", "watch", "esc", "voltar")
 	case scrJudge:
 		help = helpLine("e", "editar", "r", "julgar de novo", "x", "exemplos", "w", "watch", "esc", "voltar")
 	case scrProgress:

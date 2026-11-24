@@ -34,6 +34,7 @@ func (m *model) helpView(h int) string {
 		keySection("NO EXERCÍCIO", [][2]string{
 			{"e", "abrir a solução no editor"}, {"s", "enviar a solução"},
 			{"x", "testar só os exemplos"}, {"w", "modo watch"},
+			{"o", "ler o enunciado no navegador"},
 		}),
 		"",
 		keySection("AJUSTES", [][2]string{

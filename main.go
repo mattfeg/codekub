@@ -65,6 +65,11 @@ func run(args []string) int {
 			return usage("codekub show <n>")
 		}
 		return ui.CmdShow(env, args[1])
+	case "open":
+		if len(args) < 2 {
+			return usage("codekub open <n>")
+		}
+		return ui.CmdOpen(env, args[1])
 	case "test":
 		ref, file, samples, ok := exerciseArgs(args[1:])
 		if !ok {

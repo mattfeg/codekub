@@ -45,6 +45,8 @@ func (m *model) problemKey(key string) tea.Cmd {
 		m.prob.offset = max(0, m.prob.offset-10)
 	case "e":
 		return m.openEditor()
+	case "o":
+		return m.openSource()
 	case "s":
 		m.navigate(scrJudge)
 		return m.startJudge(false)
@@ -78,8 +80,11 @@ func (m *model) problemView(h int) string {
 		sTitle.Render("SUA SOLUÇÃO"), "",
 		sText.Render(shortPath(m.solutionPath())), "",
 		sMuted.Render("limite  ") + sText.Render(limitText(ex, m.env.Lang)),
-		sMuted.Render("nível   ") + stars(ex.Level), "",
 	}
+	if ex.Level > 0 {
+		side = append(side, sMuted.Render("nível   ")+stars(ex.Level))
+	}
+	side = append(side, "")
 	side = append(side, chips(ex.Concepts, hexText, sideW-4)...)
 	side = append(side, "")
 	if st, ok := m.stats[ex.Key()]; ok {
@@ -91,7 +96,11 @@ func (m *model) problemView(h int) string {
 	} else {
 		side = append(side, sMuted.Render("ainda não enviado"))
 	}
-	side = append(side, "", sFaint.Render(strings.Repeat("─", sideW-4)), "",
+	side = append(side, "", sFaint.Render(strings.Repeat("─", sideW-4)), "")
+	if ex.Source.URL != "" {
+		side = append(side, sKey.Render("o")+"  "+sText.Render("ler o enunciado no navegador"))
+	}
+	side = append(side,
 		sKey.Render("e")+"  "+sText.Render("abrir no editor")+sFaint.Render(" ("+editorName(m.env.WS)+")"),
 		sKey.Render("s")+"  "+sText.Render("enviar a solução"),
 		sKey.Render("x")+"  "+sText.Render("testar só os exemplos"),
