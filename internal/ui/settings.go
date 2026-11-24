@@ -203,6 +203,7 @@ func (m *model) saveLanguage(id string) {
 	m.jdg.stopRun()
 	m.jdg.stopWatch()
 	m.jdg = judgeState{}
+	m.refreshStats() // progress is per language too
 	m.notify("linguagem: " + lang.Name)
 }
 

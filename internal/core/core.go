@@ -51,9 +51,10 @@ func Open() (*Env, error) {
 
 func (e *Env) Close() { e.Store.Close() }
 
-// Stats never fails: a broken database shows as no progress.
+// Stats is the progress in the current language. It never fails: a broken
+// database shows as no progress.
 func (e *Env) Stats() map[string]store.ExerciseStat {
-	stats, err := e.Store.Stats()
+	stats, err := e.Store.Stats(e.Lang.ID)
 	if err != nil {
 		return map[string]store.ExerciseStat{}
 	}

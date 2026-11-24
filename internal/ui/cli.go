@@ -74,7 +74,8 @@ func CmdTest(env *core.Env, ref, file string, samplesOnly bool) int {
 	if err != nil {
 		return fail(err)
 	}
-	before := env.Stats()[ex.Key()].Solved
+	stats, _ := env.Store.Stats(lang.ID) // the file's language, which may differ from the configured one
+	before := stats[ex.Key()].Solved
 
 	mode := "submissão"
 	if samplesOnly {

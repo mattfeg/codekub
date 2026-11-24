@@ -95,8 +95,10 @@ func (s *Store) Submissions(limit int) ([]Submission, error) {
 	return subs, rows.Err()
 }
 
-// Stats summarizes each exercise the user has submitted.
-func (s *Store) Stats() (map[string]ExerciseStat, error) {
+// Stats summarizes each exercise the user has submitted in one language, so
+// a problem solved in Ruby still shows as open in JavaScript. An empty
+// language counts submissions in every language.
+func (s *Store) Stats(language string) (map[string]ExerciseStat, error) {
 	subs, err := s.Submissions(1 << 30)
 	if err != nil {
 		return nil, err
@@ -104,6 +106,9 @@ func (s *Store) Stats() (map[string]ExerciseStat, error) {
 	stats := map[string]ExerciseStat{}
 	for i := len(subs) - 1; i >= 0; i-- { // oldest first, so the last one wins
 		sub := subs[i]
+		if language != "" && sub.Language != language {
+			continue
+		}
 		st := stats[sub.Exercise]
 		st.Attempts++
 		st.LastVerdict, st.LastAt = sub.Verdict, sub.CreatedAt

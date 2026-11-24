@@ -23,15 +23,24 @@ func TestStatsAndActivity(t *testing.T) {
 	add("002-business-card", "AC", 22, true) // sample run: never counts
 	add("002-business-card", "PE", 22, false)
 
-	stats, _ := s.Stats()
+	stats, _ := s.Stats("ruby")
 	if st := stats["001-hello-world"]; !st.Solved || st.Attempts != 2 || st.LastVerdict != "AC" {
 		t.Errorf("hello world: %+v", st)
 	}
 	if st := stats["002-business-card"]; st.Solved || st.Attempts != 1 || st.LastVerdict != "PE" {
 		t.Errorf("business card: %+v", st)
 	}
+	if _, err := s.Add(Submission{Exercise: "003-other", Language: "python", Verdict: "AC", CreatedAt: day(22)}, "code"); err != nil {
+		t.Fatal(err)
+	}
+	if stats, _ := s.Stats("ruby"); stats["003-other"].Attempts != 0 {
+		t.Errorf("python submission counted for ruby: %+v", stats["003-other"])
+	}
+	if stats, _ := s.Stats(""); !stats["003-other"].Solved {
+		t.Errorf("all languages: %+v", stats["003-other"])
+	}
 	act, _ := s.Activity()
-	if act["2026-11-22"] != 1 || act["2026-11-20"] != 1 {
+	if act["2026-11-22"] != 2 || act["2026-11-20"] != 1 {
 		t.Errorf("activity %v", act)
 	}
 	if n := Streak(act, day(22)); n != 3 {
