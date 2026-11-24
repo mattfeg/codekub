@@ -46,7 +46,11 @@ func plural(n int, one, many string) string {
 	return fmt.Sprintf("%d %s", n, many)
 }
 
+// stars shows the level from 1 to 4; level 0 means unknown and shows nothing.
 func stars(level int) string {
+	if level <= 0 {
+		return ""
+	}
 	return fg(hexWarm).Render(strings.Repeat("★", level)) + sFaint.Render(strings.Repeat("☆", max(0, 4-level)))
 }
 

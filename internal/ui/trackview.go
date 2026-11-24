@@ -6,6 +6,7 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
+	xansi "github.com/charmbracelet/x/ansi"
 
 	"github.com/mattfeg/codekub/internal/core"
 )
@@ -48,6 +49,14 @@ func (m *model) trackKey(key string) tea.Cmd {
 			t.ex = 0
 		} else if len(p.Exercises) > 0 {
 			t.ex = (t.ex + 1) % len(p.Exercises)
+		}
+	case "pgdown", " ":
+		if t.focus == 1 && len(p.Exercises) > 0 {
+			t.ex = min(len(p.Exercises)-1, t.ex+10)
+		}
+	case "pgup":
+		if t.focus == 1 {
+			t.ex = max(0, t.ex-10)
 		}
 	case "right", "l", "enter":
 		switch {
@@ -128,9 +137,10 @@ func (m *model) trackView(h int) string {
 			cursorLine = len(body)
 		}
 		st, ok := m.stats[ex.Key()]
-		title := sText.Render(ex.Title)
+		name := xansi.Truncate(ex.Title, 36, "…")
+		title := sText.Render(name)
 		if selected {
-			title = sBold.Render(ex.Title)
+			title = sBold.Render(name)
 		}
 		if ex == next {
 			title += " " + lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color(hexInk)).
