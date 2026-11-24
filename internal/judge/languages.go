@@ -43,6 +43,11 @@ var languages = []Language{
 		Check: []string{python, "-m", "py_compile", "{src}"}, Run: []string{python, "{src}"},
 		TimeFactor: 3, Version: []string{python, "--version"}, Comment: "#",
 	},
+	{
+		ID: "javascript", Name: "JavaScript", Ext: ".js",
+		Check: []string{"node", "--check", "{src}"}, Run: []string{"node", "{src}"},
+		TimeFactor: 3, Version: []string{"node", "--version"}, Comment: "//",
+	},
 }
 
 func Languages() []Language { return languages }

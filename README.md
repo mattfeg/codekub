@@ -9,7 +9,7 @@ exemplos do enunciado e mostra o veredito ao vivo (AC, PE, WA, TLE, RE, CE).
 
 ## Instalar
 
-Você precisa da linguagem que vai praticar instalada: hoje, Ruby ou Python.
+Você precisa da linguagem que vai praticar instalada: hoje, Ruby, Python ou JavaScript (Node.js).
 
 **macOS e Linux** (Homebrew):
 

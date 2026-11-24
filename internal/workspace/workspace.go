@@ -89,8 +89,9 @@ func (w *Workspace) SolutionPath(e *track.Exercise, lang judge.Language) string 
 }
 
 var hints = map[string]string{
-	"ruby":   "Leia a entrada com gets e imprima a resposta com puts.",
-	"python": "Leia a entrada com input() e imprima a resposta com print().",
+	"ruby":       "Leia a entrada com gets e imprima a resposta com puts.",
+	"python":     "Leia a entrada com input() e imprima a resposta com print().",
+	"javascript": "Leia a entrada com require('fs').readFileSync(0, 'utf8') e imprima a resposta com console.log().",
 }
 
 // EnsureSolution creates the solution file from a template when missing.
