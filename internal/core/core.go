@@ -70,10 +70,11 @@ func Solved(p *track.Phase, stats map[string]store.ExerciseStat) int {
 	return n
 }
 
-// Unlocked reports whether phase i is open: the first always is, the others
-// once UnlockRatio of the previous phase is solved.
+// Unlocked reports whether phase i is open: the first always is, and so is
+// any phase marked "open"; the others once UnlockRatio of the previous phase
+// is solved.
 func (e *Env) Unlocked(i int, stats map[string]store.ExerciseStat) bool {
-	if i == 0 {
+	if i == 0 || e.Track.Phases[i].Open {
 		return true
 	}
 	prev := e.Track.Phases[i-1]

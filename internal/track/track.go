@@ -34,6 +34,7 @@ type Phase struct {
 	Title       string  `json:"title"`
 	Description string  `json:"description"`
 	Topics      []Topic `json:"topics"`
+	Open        bool    `json:"open"` // never locked, whatever the previous phase
 	Exercises   []*Exercise
 	Dir         string // slash-separated path inside the track
 }
@@ -128,7 +129,7 @@ func (t *Track) Exercises() []*Exercise {
 	return all
 }
 
-// Lookup accepts "13", "013", "integer-average" or "015-integer-average".
+// Lookup accepts "1001", "extremamente-basico" or "1001-extremamente-basico".
 func (t *Track) Lookup(ref string) (*Exercise, error) {
 	ref = strings.TrimSpace(ref)
 	n, numErr := strconv.Atoi(ref)
