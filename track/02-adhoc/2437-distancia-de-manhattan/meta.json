@@ -1,0 +1,17 @@
+{
+  "id": "2437",
+  "slug": "distancia-de-manhattan",
+  "title": "Distância de Manhattan",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2437",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2437.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "3167",
+  "slug": "procurando-palavras-na-diagonal-secundaria",
+  "title": "Procurando Palavras na Diagonal Secundária",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3167",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3167.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

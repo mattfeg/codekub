@@ -1,0 +1,17 @@
+{
+  "id": "2441",
+  "slug": "janela",
+  "title": "Janela",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2441",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2441.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

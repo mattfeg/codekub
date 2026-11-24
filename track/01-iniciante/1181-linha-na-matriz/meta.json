@@ -1,0 +1,17 @@
+{
+  "id": "1181",
+  "slug": "linha-na-matriz",
+  "title": "Linha na Matriz",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1181",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1181.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

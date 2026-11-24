@@ -1,0 +1,13 @@
+{
+  "id": "01",
+  "slug": "iniciante",
+  "title": "Iniciante",
+  "description": "Entrada, saída, condicionais e laços",
+  "open": true,
+  "topics": [
+    {
+      "slug": "iniciante",
+      "title": "Iniciante"
+    }
+  ]
+}

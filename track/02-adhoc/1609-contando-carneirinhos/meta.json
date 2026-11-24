@@ -1,0 +1,17 @@
+{
+  "id": "1609",
+  "slug": "contando-carneirinhos",
+  "title": "Contando Carneirinhos",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1609",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1609.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

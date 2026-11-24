@@ -1,0 +1,17 @@
+{
+  "id": "1546",
+  "slug": "feedback",
+  "title": "Feedback",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1546",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1546.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

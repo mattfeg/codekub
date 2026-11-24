@@ -1,0 +1,17 @@
+{
+  "id": "1097",
+  "slug": "sequencia-ij-3",
+  "title": "Sequencia IJ 3",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1097",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1097.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

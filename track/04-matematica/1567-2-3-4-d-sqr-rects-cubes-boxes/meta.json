@@ -1,0 +1,17 @@
+{
+  "id": "1567",
+  "slug": "2-3-4-d-sqr-rects-cubes-boxes",
+  "title": "(2/3/4)-D Sqr/Rects/Cubes/Boxes?",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1567",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1567.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

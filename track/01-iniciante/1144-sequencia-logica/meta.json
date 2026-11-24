@@ -1,0 +1,17 @@
+{
+  "id": "1144",
+  "slug": "sequencia-logica",
+  "title": "Sequência Lógica",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1144",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1144.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

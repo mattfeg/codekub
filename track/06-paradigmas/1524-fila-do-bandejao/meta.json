@@ -1,0 +1,17 @@
+{
+  "id": "1524",
+  "slug": "fila-do-bandejao",
+  "title": "Fila do Bandejão",
+  "topic": "paradigmas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1524",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1524.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1140",
+  "slug": "flores-florescem-da-franca",
+  "title": "Flores Florescem da França",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1140",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1140.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

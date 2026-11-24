@@ -1,0 +1,17 @@
+{
+  "id": "1107",
+  "slug": "escultura-a-laser",
+  "title": "Escultura à Laser",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1107",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1107.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

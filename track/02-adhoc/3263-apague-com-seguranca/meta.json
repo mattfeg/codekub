@@ -1,0 +1,17 @@
+{
+  "id": "3263",
+  "slug": "apague-com-seguranca",
+  "title": "Apague Com Segurança",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3263",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3263.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

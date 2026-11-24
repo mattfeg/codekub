@@ -1,0 +1,17 @@
+{
+  "id": "2596",
+  "slug": "xenlonguinho",
+  "title": "Xenlonguinho",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2596",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2596.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

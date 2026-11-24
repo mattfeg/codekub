@@ -1,0 +1,17 @@
+{
+  "id": "1919",
+  "slug": "ajude-nhonho",
+  "title": "Ajude Nhonho",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1919",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1919.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

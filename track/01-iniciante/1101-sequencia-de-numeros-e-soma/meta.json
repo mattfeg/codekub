@@ -1,0 +1,17 @@
+{
+  "id": "1101",
+  "slug": "sequencia-de-numeros-e-soma",
+  "title": "Sequência de Números e Soma",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1101",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1101.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

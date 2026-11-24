@@ -1,0 +1,17 @@
+{
+  "id": "2863",
+  "slug": "umil-bolt",
+  "title": "Umil Bolt",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2863",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2863.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

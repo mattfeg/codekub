@@ -1,0 +1,17 @@
+{
+  "id": "1940",
+  "slug": "jogo-da-estrategia",
+  "title": "Jogo da Estratégia",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1940",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1940.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

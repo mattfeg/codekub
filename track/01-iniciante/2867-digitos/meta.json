@@ -1,0 +1,17 @@
+{
+  "id": "2867",
+  "slug": "digitos",
+  "title": "Dígitos",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2867",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2867.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "03",
+  "slug": "strings",
+  "title": "Strings",
+  "description": "Manipulação de texto",
+  "open": true,
+  "topics": [
+    {
+      "slug": "strings",
+      "title": "Strings"
+    }
+  ]
+}

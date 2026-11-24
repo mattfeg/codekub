@@ -1,0 +1,17 @@
+{
+  "id": "1444",
+  "slug": "corrida-dos-marrecos",
+  "title": "Corrida dos Marrecos",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1444",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1444.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

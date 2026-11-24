@@ -1,0 +1,17 @@
+{
+  "id": "2180",
+  "slug": "viagem-a-marte-na-velocidade-de-primo",
+  "title": "Viagem à Marte na Velocidade de Primo",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2180",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2180.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

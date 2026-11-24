@@ -1,0 +1,17 @@
+{
+  "id": "1124",
+  "slug": "elevador",
+  "title": "Elevador",
+  "topic": "geometria",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1124",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1124.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

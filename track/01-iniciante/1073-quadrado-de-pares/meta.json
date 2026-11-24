@@ -1,0 +1,17 @@
+{
+  "id": "1073",
+  "slug": "quadrado-de-pares",
+  "title": "Quadrado de Pares",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1073",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1073.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

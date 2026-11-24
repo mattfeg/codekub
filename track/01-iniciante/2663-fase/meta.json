@@ -1,0 +1,17 @@
+{
+  "id": "2663",
+  "slug": "fase",
+  "title": "Fase",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2663",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2663.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

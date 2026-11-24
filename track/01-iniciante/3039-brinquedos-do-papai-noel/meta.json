@@ -1,0 +1,17 @@
+{
+  "id": "3039",
+  "slug": "brinquedos-do-papai-noel",
+  "title": "Brinquedos do Papai Noel",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3039",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3039.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

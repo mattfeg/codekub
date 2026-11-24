@@ -1,0 +1,17 @@
+{
+  "id": "1244",
+  "slug": "ordenacao-por-tamanho",
+  "title": "Ordenação por Tamanho",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1244",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1244.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

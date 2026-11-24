@@ -1,0 +1,17 @@
+{
+  "id": "1001",
+  "slug": "extremamente-basico",
+  "title": "Extremamente Básico",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1001",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1001.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

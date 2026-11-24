@@ -1,0 +1,17 @@
+{
+  "id": "1096",
+  "slug": "sequencia-ij-2",
+  "title": "Sequencia IJ 2",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1096",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1096.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

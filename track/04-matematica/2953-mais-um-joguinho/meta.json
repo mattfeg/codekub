@@ -1,0 +1,17 @@
+{
+  "id": "2953",
+  "slug": "mais-um-joguinho",
+  "title": "Mais um Joguinho",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2953",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2953.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

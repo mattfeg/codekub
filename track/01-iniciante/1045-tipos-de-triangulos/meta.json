@@ -1,0 +1,17 @@
+{
+  "id": "1045",
+  "slug": "tipos-de-triangulos",
+  "title": "Tipos de Triângulos",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 5,
+  "source": {
+    "name": "beecrowd 1045",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1045.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

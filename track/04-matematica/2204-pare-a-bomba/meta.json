@@ -1,0 +1,17 @@
+{
+  "id": "2204",
+  "slug": "pare-a-bomba",
+  "title": "Pare A Bomba!",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2204",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2204.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

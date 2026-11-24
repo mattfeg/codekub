@@ -1,0 +1,17 @@
+{
+  "id": "1763",
+  "slug": "tradutor-do-papai-noel",
+  "title": "Tradutor do Papai Noel",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1763",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1763.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

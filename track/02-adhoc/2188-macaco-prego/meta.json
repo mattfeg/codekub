@@ -1,0 +1,17 @@
+{
+  "id": "2188",
+  "slug": "macaco-prego",
+  "title": "Macaco-prego",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2188",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2188.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

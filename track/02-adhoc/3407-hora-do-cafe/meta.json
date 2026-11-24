@@ -1,0 +1,17 @@
+{
+  "id": "3407",
+  "slug": "hora-do-cafe",
+  "title": "Hora do Café",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3407",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3407.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

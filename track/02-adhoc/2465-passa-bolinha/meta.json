@@ -1,0 +1,17 @@
+{
+  "id": "2465",
+  "slug": "passa-bolinha",
+  "title": "Passa Bolinha",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2465",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2465.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

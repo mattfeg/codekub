@@ -1,0 +1,17 @@
+{
+  "id": "1448",
+  "slug": "telefone-sem-fio",
+  "title": "Telefone Sem Fio",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1448",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1448.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

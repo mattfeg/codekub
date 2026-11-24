@@ -1,0 +1,17 @@
+{
+  "id": "2484",
+  "slug": "abracadabra",
+  "title": "Abracadabra",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2484",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2484.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

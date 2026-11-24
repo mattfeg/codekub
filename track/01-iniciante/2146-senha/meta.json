@@ -1,0 +1,17 @@
+{
+  "id": "2146",
+  "slug": "senha",
+  "title": "Senha",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2146",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2146.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

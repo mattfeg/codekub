@@ -1,0 +1,17 @@
+{
+  "id": "2423",
+  "slug": "receita-de-bolo",
+  "title": "Receita de Bolo",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2423",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2423.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

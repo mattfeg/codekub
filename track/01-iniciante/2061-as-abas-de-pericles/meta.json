@@ -1,0 +1,17 @@
+{
+  "id": "2061",
+  "slug": "as-abas-de-pericles",
+  "title": "As Abas de Péricles",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2061",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2061.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

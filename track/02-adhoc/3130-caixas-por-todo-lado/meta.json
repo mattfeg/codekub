@@ -1,0 +1,17 @@
+{
+  "id": "3130",
+  "slug": "caixas-por-todo-lado",
+  "title": "Caixas Por Todo Lado",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3130",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3130.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

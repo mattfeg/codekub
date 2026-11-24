@@ -1,0 +1,17 @@
+{
+  "id": "1061",
+  "slug": "tempo-de-um-evento",
+  "title": "Tempo de um Evento",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1061",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1061.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

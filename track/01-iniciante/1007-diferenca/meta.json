@@ -1,0 +1,17 @@
+{
+  "id": "1007",
+  "slug": "diferenca",
+  "title": "Diferença",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1007",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1007.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

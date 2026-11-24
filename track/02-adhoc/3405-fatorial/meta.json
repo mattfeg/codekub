@@ -1,0 +1,17 @@
+{
+  "id": "3405",
+  "slug": "fatorial",
+  "title": "Fatorial",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3405",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3405.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

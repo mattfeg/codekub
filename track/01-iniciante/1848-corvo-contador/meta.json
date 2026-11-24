@@ -1,0 +1,17 @@
+{
+  "id": "1848",
+  "slug": "corvo-contador",
+  "title": "Corvo Contador",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 2,
+  "source": {
+    "name": "beecrowd 1848",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1848.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

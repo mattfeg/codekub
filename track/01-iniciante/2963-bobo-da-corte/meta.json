@@ -1,0 +1,17 @@
+{
+  "id": "2963",
+  "slug": "bobo-da-corte",
+  "title": "Bobo da Corte",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2963",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2963.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

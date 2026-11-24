@@ -1,0 +1,17 @@
+{
+  "id": "2752",
+  "slug": "saida-6",
+  "title": "Saída 6",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2752",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2752.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

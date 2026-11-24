@@ -1,0 +1,17 @@
+{
+  "id": "3408",
+  "slug": "ignore-as-letras",
+  "title": "Ignore as Letras",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3408",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3408.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -36,5 +36,5 @@ jobs:
           ./codekub-ci version
           ./codekub-ci doctor
           ./codekub-ci next
-          printf 'puts "Olá, mundo!"\n' > "$CODEKUB_SOLUTIONS/001-hello-world.rb"
-          ./codekub-ci test 1
+          printf 'puts "Hello World!"\n' > "$CODEKUB_SOLUTIONS/1000-hello-world.rb"
+          ./codekub-ci test 1000

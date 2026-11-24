@@ -1,0 +1,17 @@
+{
+  "id": "1036",
+  "slug": "formula-de-bhaskara",
+  "title": "Fórmula de Bhaskara",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 4,
+  "source": {
+    "name": "beecrowd 1036",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1036.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

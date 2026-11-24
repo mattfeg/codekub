@@ -1,0 +1,17 @@
+{
+  "id": "2708",
+  "slug": "turistas-no-parque-huacachina",
+  "title": "Turistas no Parque Huacachina",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2708",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2708.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

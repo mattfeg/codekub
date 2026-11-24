@@ -1,0 +1,17 @@
+{
+  "id": "2232",
+  "slug": "triangulo-de-pascal",
+  "title": "Triângulo de Pascal",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2232",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2232.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

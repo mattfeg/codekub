@@ -1,0 +1,17 @@
+{
+  "id": "1534",
+  "slug": "matriz-123",
+  "title": "Matriz 123",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1534",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1534.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

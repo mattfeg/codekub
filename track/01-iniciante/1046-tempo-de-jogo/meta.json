@@ -1,0 +1,17 @@
+{
+  "id": "1046",
+  "slug": "tempo-de-jogo",
+  "title": "Tempo de Jogo",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1046",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1046.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

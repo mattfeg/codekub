@@ -1,0 +1,17 @@
+{
+  "id": "3307",
+  "slug": "decora-o-role",
+  "title": "Decora o Rolê!",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3307",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3307.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

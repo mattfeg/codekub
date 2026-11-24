@@ -1,0 +1,17 @@
+{
+  "id": "1044",
+  "slug": "multiplos",
+  "title": "Múltiplos",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 2,
+  "source": {
+    "name": "beecrowd 1044",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1044.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2803",
+  "slug": "estados-do-norte",
+  "title": "Estados do Norte",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2803",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2803.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

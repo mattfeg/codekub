@@ -1,0 +1,17 @@
+{
+  "id": "2443",
+  "slug": "soma-de-fracoes",
+  "title": "Soma de Frações",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2443",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2443.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

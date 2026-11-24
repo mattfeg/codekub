@@ -1,0 +1,17 @@
+{
+  "id": "3084",
+  "slug": "relogio-antigo",
+  "title": "Relógio Antigo",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3084",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3084.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

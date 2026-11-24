@@ -1,0 +1,17 @@
+{
+  "id": "1387",
+  "slug": "og",
+  "title": "Og",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1387",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1387.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

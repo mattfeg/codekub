@@ -1,0 +1,17 @@
+{
+  "id": "1099",
+  "slug": "soma-de-impares-consecutivos-ii",
+  "title": "Soma de Ímpares Consecutivos II",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1099",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1099.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

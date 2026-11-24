@@ -1,0 +1,17 @@
+{
+  "id": "2031",
+  "slug": "pedra-papel-ataque-aereo",
+  "title": "Pedra, Papel, Ataque Aéreo",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2031",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2031.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

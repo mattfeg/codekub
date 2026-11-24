@@ -1,0 +1,17 @@
+{
+  "id": "1091",
+  "slug": "divisao-da-nlogonia",
+  "title": "Divisão da Nlogônia",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1091",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1091.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

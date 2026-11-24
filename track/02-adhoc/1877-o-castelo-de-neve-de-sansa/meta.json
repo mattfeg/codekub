@@ -1,0 +1,17 @@
+{
+  "id": "1877",
+  "slug": "o-castelo-de-neve-de-sansa",
+  "title": "O Castelo de Neve de Sansa",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1877",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1877.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

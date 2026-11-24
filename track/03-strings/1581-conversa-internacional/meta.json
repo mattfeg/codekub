@@ -1,0 +1,17 @@
+{
+  "id": "1581",
+  "slug": "conversa-internacional",
+  "title": "Conversa Internacional",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1581",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1581.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

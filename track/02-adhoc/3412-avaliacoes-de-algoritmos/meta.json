@@ -1,0 +1,17 @@
+{
+  "id": "3412",
+  "slug": "avaliacoes-de-algoritmos",
+  "title": "Avaliações de Algoritmos",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3412",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3412.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

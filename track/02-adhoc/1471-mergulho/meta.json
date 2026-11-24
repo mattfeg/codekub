@@ -1,0 +1,17 @@
+{
+  "id": "1471",
+  "slug": "mergulho",
+  "title": "Mergulho",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1471",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1471.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

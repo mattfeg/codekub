@@ -1,0 +1,17 @@
+{
+  "id": "1183",
+  "slug": "acima-da-diagonal-principal",
+  "title": "Acima da Diagonal Principal",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1183",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1183.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

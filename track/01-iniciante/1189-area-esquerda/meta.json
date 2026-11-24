@@ -1,0 +1,17 @@
+{
+  "id": "1189",
+  "slug": "area-esquerda",
+  "title": "Área Esquerda",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1189",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1189.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

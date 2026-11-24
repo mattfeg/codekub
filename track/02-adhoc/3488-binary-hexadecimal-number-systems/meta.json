@@ -1,0 +1,17 @@
+{
+  "id": "3488",
+  "slug": "binary-hexadecimal-number-systems",
+  "title": "Binary/Hexadecimal Number Systems",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3488",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3488.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

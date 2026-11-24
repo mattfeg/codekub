@@ -1,0 +1,17 @@
+{
+  "id": "1178",
+  "slug": "preenchimento-de-vetor-iii",
+  "title": "Preenchimento de Vetor III",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1178",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1178.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

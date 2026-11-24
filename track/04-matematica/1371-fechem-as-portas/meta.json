@@ -1,0 +1,17 @@
+{
+  "id": "1371",
+  "slug": "fechem-as-portas",
+  "title": "Fechem as Portas!",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1371",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1371.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

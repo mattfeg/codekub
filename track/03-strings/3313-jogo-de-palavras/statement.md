@@ -1,0 +1,25 @@
+# Jogo de Palavras
+
+O enunciado está no beecrowd: aperte `o` para abri-lo no navegador.
+
+<https://resources.beecrowd.com/repository/UOJ_3313.html>
+
+Os testes são só os exemplos do enunciado: passar neles não garante que a
+solução esteja certa no beecrowd.
+
+## Exemplos
+
+Entrada:
+
+```
+eart
+rato
+*
+```
+
+Saída:
+
+```
+Caso 1: arte tear
+Caso 2: ator tora
+```

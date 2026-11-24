@@ -1,0 +1,17 @@
+{
+  "id": "3257",
+  "slug": "plantando-arvores",
+  "title": "Plantando Árvores",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3257",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3257.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1548",
+  "slug": "fila-do-recreio",
+  "title": "Fila do Recreio",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1548",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1548.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1017",
+  "slug": "gasto-de-combustivel",
+  "title": "Gasto de Combustível",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1017",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1017.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

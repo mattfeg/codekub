@@ -1,0 +1,17 @@
+{
+  "id": "1564",
+  "slug": "vai-ter-copa",
+  "title": "Vai Ter Copa?",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1564",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1564.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

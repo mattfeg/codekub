@@ -1,0 +1,17 @@
+{
+  "id": "1037",
+  "slug": "intervalo",
+  "title": "Intervalo",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 4,
+  "source": {
+    "name": "beecrowd 1037",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1037.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

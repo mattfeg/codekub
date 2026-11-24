@@ -1,0 +1,17 @@
+{
+  "id": "2906",
+  "slug": "banco-de-dados-de-clientes",
+  "title": "Banco de Dados de Clientes",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 2906",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2906.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

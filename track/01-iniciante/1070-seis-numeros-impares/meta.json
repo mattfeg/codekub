@@ -1,0 +1,17 @@
+{
+  "id": "1070",
+  "slug": "seis-numeros-impares",
+  "title": "Seis Números Ímpares",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1070",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1070.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

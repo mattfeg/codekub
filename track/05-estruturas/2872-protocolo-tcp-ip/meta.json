@@ -1,0 +1,17 @@
+{
+  "id": "2872",
+  "slug": "protocolo-tcp-ip",
+  "title": "Protocolo TCP/IP",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2872",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2872.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

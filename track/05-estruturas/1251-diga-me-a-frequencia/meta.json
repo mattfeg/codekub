@@ -1,0 +1,17 @@
+{
+  "id": "1251",
+  "slug": "diga-me-a-frequencia",
+  "title": "Diga-me a Frequência",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1251",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1251.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

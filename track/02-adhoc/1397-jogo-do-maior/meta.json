@@ -1,0 +1,17 @@
+{
+  "id": "1397",
+  "slug": "jogo-do-maior",
+  "title": "Jogo do Maior",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1397",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1397.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

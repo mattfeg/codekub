@@ -1,0 +1,17 @@
+{
+  "id": "1104",
+  "slug": "troca-de-cartas",
+  "title": "Troca de Cartas",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1104",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1104.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

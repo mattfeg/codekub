@@ -1,0 +1,17 @@
+{
+  "id": "1064",
+  "slug": "positivos-e-media",
+  "title": "Positivos e Média",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1064",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1064.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

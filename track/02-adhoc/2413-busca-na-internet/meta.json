@@ -1,0 +1,17 @@
+{
+  "id": "2413",
+  "slug": "busca-na-internet",
+  "title": "Busca na Internet",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2413",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2413.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

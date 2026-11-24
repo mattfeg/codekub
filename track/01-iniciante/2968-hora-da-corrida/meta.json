@@ -1,0 +1,17 @@
+{
+  "id": "2968",
+  "slug": "hora-da-corrida",
+  "title": "Hora da Corrida",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2968",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2968.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

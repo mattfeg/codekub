@@ -1,0 +1,13 @@
+{
+  "id": "08",
+  "slug": "geometria",
+  "title": "Geometria",
+  "description": "Geometria computacional: pontos, linhas e polígonos",
+  "open": true,
+  "topics": [
+    {
+      "slug": "geometria",
+      "title": "Geometria Computacional"
+    }
+  ]
+}

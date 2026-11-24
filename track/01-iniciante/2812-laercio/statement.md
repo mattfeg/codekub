@@ -1,0 +1,30 @@
+# Laércio
+
+O enunciado está no beecrowd: aperte `o` para abri-lo no navegador.
+
+<https://resources.beecrowd.com/repository/UOJ_2812.html>
+
+Os testes são só os exemplos do enunciado: passar neles não garante que a
+solução esteja certa no beecrowd.
+
+## Exemplos
+
+Entrada:
+
+```
+3
+10
+1 2 3 4 5 6 7 8 9 10
+7
+2 4 6 8 10 12 14
+4
+9 7 77 63
+```
+
+Saída:
+
+```
+9 1 7 3 5
+
+77 7 63 9
+```

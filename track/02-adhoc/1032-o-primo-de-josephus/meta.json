@@ -1,0 +1,17 @@
+{
+  "id": "1032",
+  "slug": "o-primo-de-josephus",
+  "title": "O Primo de Josephus",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1032",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1032.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

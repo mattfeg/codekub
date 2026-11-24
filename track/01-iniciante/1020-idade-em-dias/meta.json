@@ -1,0 +1,17 @@
+{
+  "id": "1020",
+  "slug": "idade-em-dias",
+  "title": "Idade em Dias",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1020",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1020.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

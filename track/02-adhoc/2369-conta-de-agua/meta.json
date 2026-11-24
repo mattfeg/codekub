@@ -1,0 +1,17 @@
+{
+  "id": "2369",
+  "slug": "conta-de-agua",
+  "title": "Conta de Água",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2369",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2369.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

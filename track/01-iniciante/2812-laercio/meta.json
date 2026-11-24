@@ -1,0 +1,17 @@
+{
+  "id": "2812",
+  "slug": "laercio",
+  "title": "Laércio",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2812",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2812.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

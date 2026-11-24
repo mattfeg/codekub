@@ -1,0 +1,17 @@
+{
+  "id": "1238",
+  "slug": "combinador",
+  "title": "Combinador",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1238",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1238.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

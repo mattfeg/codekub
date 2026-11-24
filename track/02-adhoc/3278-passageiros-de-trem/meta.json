@@ -1,0 +1,17 @@
+{
+  "id": "3278",
+  "slug": "passageiros-de-trem",
+  "title": "Passageiros de Trem",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3278",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3278.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

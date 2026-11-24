@@ -1,0 +1,17 @@
+{
+  "id": "3208",
+  "slug": "o-criptografo-envergonhado",
+  "title": "O Criptógrafo Envergonhado",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3208",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3208.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

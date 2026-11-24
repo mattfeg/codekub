@@ -1,0 +1,17 @@
+{
+  "id": "2147",
+  "slug": "galopeira",
+  "title": "Galopeira",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2147",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2147.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

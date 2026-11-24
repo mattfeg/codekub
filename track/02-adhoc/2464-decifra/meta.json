@@ -1,0 +1,17 @@
+{
+  "id": "2464",
+  "slug": "decifra",
+  "title": "Decifra",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2464",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2464.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

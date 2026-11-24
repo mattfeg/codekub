@@ -1,0 +1,17 @@
+{
+  "id": "2763",
+  "slug": "entrada-e-saida-cpf",
+  "title": "Entrada e Saída CPF",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2763",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2763.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

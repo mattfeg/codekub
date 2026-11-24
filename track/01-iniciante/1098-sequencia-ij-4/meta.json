@@ -1,0 +1,17 @@
+{
+  "id": "1098",
+  "slug": "sequencia-ij-4",
+  "title": "Sequencia IJ 4",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1098",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1098.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

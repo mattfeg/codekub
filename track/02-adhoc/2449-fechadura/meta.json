@@ -1,0 +1,17 @@
+{
+  "id": "2449",
+  "slug": "fechadura",
+  "title": "Fechadura",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2449",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2449.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

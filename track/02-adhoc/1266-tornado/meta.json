@@ -1,0 +1,17 @@
+{
+  "id": "1266",
+  "slug": "tornado",
+  "title": "Tornado!",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1266",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1266.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

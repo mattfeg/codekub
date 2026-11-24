@@ -1,0 +1,17 @@
+{
+  "id": "2983",
+  "slug": "nem-tudo-e-greve",
+  "title": "Nem Tudo é Greve",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2983",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2983.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

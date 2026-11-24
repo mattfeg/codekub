@@ -1,0 +1,17 @@
+{
+  "id": "1009",
+  "slug": "salario-com-bonus",
+  "title": "Salário com Bônus",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1009",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1009.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

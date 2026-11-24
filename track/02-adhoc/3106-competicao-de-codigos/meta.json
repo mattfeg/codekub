@@ -1,0 +1,17 @@
+{
+  "id": "3106",
+  "slug": "competicao-de-codigos",
+  "title": "Competição de Códigos",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3106",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3106.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

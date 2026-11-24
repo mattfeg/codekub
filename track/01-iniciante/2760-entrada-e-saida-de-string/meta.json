@@ -1,0 +1,17 @@
+{
+  "id": "2760",
+  "slug": "entrada-e-saida-de-string",
+  "title": "Entrada e Saída de String",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2760",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2760.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

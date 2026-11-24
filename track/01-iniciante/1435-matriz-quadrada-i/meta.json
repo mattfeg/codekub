@@ -1,0 +1,17 @@
+{
+  "id": "1435",
+  "slug": "matriz-quadrada-i",
+  "title": "Matriz Quadrada I",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1435",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1435.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

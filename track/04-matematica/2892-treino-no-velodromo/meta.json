@@ -1,0 +1,17 @@
+{
+  "id": "2892",
+  "slug": "treino-no-velodromo",
+  "title": "Treino No Velódromo",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2892",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2892.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

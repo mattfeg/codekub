@@ -1,0 +1,17 @@
+{
+  "id": "3454",
+  "slug": "alice-no-pais-do-jogo-da-velha",
+  "title": "Alice no País do Jogo da Velha",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3454",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3454.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

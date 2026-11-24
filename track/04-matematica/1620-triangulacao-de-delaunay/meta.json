@@ -1,0 +1,17 @@
+{
+  "id": "1620",
+  "slug": "triangulacao-de-delaunay",
+  "title": "Triangulação de Delaunay",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1620",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1620.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1114",
+  "slug": "senha-fixa",
+  "title": "Senha Fixa",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1114",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1114.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1541",
+  "slug": "construindo-casas",
+  "title": "Construindo Casas",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1541",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1541.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

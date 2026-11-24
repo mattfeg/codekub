@@ -1,0 +1,17 @@
+{
+  "id": "3204",
+  "slug": "honeycomb-walk",
+  "title": "Honeycomb Walk",
+  "topic": "grafos",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3204",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3204.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

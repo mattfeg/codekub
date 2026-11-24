@@ -1,0 +1,17 @@
+{
+  "id": "1608",
+  "slug": "bolos-da-maria",
+  "title": "Bolos da Maria",
+  "topic": "paradigmas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1608",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1608.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

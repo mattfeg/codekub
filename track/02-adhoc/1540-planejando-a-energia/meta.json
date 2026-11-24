@@ -1,0 +1,17 @@
+{
+  "id": "1540",
+  "slug": "planejando-a-energia",
+  "title": "Planejando a Energia",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1540",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1540.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

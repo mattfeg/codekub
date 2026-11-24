@@ -1,0 +1,17 @@
+{
+  "id": "1537",
+  "slug": "fila-do-banco",
+  "title": "Fila do Banco",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1537",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1537.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

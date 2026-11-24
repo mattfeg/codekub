@@ -1,0 +1,17 @@
+{
+  "id": "2950",
+  "slug": "as-duas-torres",
+  "title": "As Duas Torres",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2950",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2950.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

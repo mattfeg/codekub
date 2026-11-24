@@ -1,0 +1,17 @@
+{
+  "id": "3145",
+  "slug": "uma-jornada-inesperada",
+  "title": "Uma Jornada Inesperada",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3145",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3145.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

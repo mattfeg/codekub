@@ -1,0 +1,17 @@
+{
+  "id": "3468",
+  "slug": "faca-mais-mas-faca-melhor",
+  "title": "Faça mais, mas faça melhor!",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3468",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3468.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

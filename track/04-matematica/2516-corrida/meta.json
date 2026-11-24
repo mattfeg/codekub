@@ -1,0 +1,17 @@
+{
+  "id": "2516",
+  "slug": "corrida",
+  "title": "Corrida",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2516",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2516.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

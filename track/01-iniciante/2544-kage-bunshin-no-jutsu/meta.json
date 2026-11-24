@@ -1,0 +1,17 @@
+{
+  "id": "2544",
+  "slug": "kage-bunshin-no-jutsu",
+  "title": "Kage Bunshin no Jutsu",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2544",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2544.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1796",
+  "slug": "economia-brasileira",
+  "title": "Economia Brasileira",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 2,
+  "source": {
+    "name": "beecrowd 1796",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1796.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

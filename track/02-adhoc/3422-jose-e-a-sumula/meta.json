@@ -1,0 +1,17 @@
+{
+  "id": "3422",
+  "slug": "jose-e-a-sumula",
+  "title": "José e a Súmula",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3422",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3422.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

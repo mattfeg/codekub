@@ -1,0 +1,17 @@
+{
+  "id": "2356",
+  "slug": "bacteria-i",
+  "title": "Bactéria I",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2356",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2356.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

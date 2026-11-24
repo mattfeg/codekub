@@ -1,0 +1,17 @@
+{
+  "id": "2390",
+  "slug": "escada-rolante",
+  "title": "Escada Rolante",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2390",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2390.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

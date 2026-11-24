@@ -1,0 +1,17 @@
+{
+  "id": "1174",
+  "slug": "selecao-em-vetor-i",
+  "title": "Seleçao em Vetor I",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1174",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1174.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

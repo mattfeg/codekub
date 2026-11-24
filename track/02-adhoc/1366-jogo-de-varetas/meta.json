@@ -1,0 +1,17 @@
+{
+  "id": "1366",
+  "slug": "jogo-de-varetas",
+  "title": "Jogo de Varetas",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1366",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1366.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1074",
+  "slug": "par-ou-impar",
+  "title": "Par ou Ímpar",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1074",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1074.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

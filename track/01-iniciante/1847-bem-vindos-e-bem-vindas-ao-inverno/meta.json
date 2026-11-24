@@ -1,0 +1,17 @@
+{
+  "id": "1847",
+  "slug": "bem-vindos-e-bem-vindas-ao-inverno",
+  "title": "Bem-vindos e Bem-vindas ao Inverno!",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1847",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1847.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

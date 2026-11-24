@@ -1,0 +1,17 @@
+{
+  "id": "1025",
+  "slug": "onde-esta-o-marmore",
+  "title": "Onde está o Mármore?",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1025",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1025.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

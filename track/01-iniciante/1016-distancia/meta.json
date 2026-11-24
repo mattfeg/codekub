@@ -1,0 +1,17 @@
+{
+  "id": "1016",
+  "slug": "distancia",
+  "title": "Distância",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1016",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1016.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

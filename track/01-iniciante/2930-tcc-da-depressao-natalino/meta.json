@@ -1,0 +1,17 @@
+{
+  "id": "2930",
+  "slug": "tcc-da-depressao-natalino",
+  "title": "TCC da Depressão Natalino",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2930",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2930.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1754",
+  "slug": "a-sala-do-tempo",
+  "title": "A Sala do Tempo",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1754",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1754.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

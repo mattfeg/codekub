@@ -1,0 +1,17 @@
+{
+  "id": "1987",
+  "slug": "divisibilidade-por-3",
+  "title": "Divisibilidade Por 3",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1987",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1987.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

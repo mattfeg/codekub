@@ -1,0 +1,17 @@
+{
+  "id": "3163",
+  "slug": "controlador-de-voo",
+  "title": "Controlador de Vôo",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3163",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3163.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

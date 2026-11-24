@@ -1,0 +1,17 @@
+{
+  "id": "1973",
+  "slug": "jornada-nas-estrelas",
+  "title": "Jornada nas Estrelas",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1973",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1973.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

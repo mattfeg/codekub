@@ -1,0 +1,17 @@
+{
+  "id": "1198",
+  "slug": "o-bravo-guerreiro-hashmat",
+  "title": "O Bravo Guerreiro Hashmat",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1198",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1198.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

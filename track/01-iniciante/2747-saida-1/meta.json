@@ -1,0 +1,17 @@
+{
+  "id": "2747",
+  "slug": "saida-1",
+  "title": "Saída 1",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2747",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2747.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

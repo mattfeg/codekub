@@ -1,0 +1,17 @@
+{
+  "id": "2129",
+  "slug": "fatorial",
+  "title": "Fatorial",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2129",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2129.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

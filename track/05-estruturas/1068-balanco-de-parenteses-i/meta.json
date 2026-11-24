@@ -1,0 +1,17 @@
+{
+  "id": "1068",
+  "slug": "balanco-de-parenteses-i",
+  "title": "Balanço de Parênteses I",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1068",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1068.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

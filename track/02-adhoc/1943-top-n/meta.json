@@ -1,0 +1,17 @@
+{
+  "id": "1943",
+  "slug": "top-n",
+  "title": "Top N",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1943",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1943.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

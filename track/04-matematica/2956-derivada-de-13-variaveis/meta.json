@@ -1,0 +1,17 @@
+{
+  "id": "2956",
+  "slug": "derivada-de-13-variaveis",
+  "title": "Derivada de 13 Variáveis",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2956",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2956.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

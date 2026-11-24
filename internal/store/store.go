@@ -12,7 +12,7 @@ type Store struct{ db *sql.DB }
 
 type Submission struct {
 	ID          int64
-	Exercise    string // exercise key, e.g. "015-integer-average"
+	Exercise    string // exercise key, e.g. "1001-extremamente-basico"
 	Language    string
 	Verdict     string
 	Passed      int

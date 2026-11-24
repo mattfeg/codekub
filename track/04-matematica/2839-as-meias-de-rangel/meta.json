@@ -1,0 +1,17 @@
+{
+  "id": "2839",
+  "slug": "as-meias-de-rangel",
+  "title": "As Meias de Rangel",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2839",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2839.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

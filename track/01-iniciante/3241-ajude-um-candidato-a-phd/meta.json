@@ -1,0 +1,17 @@
+{
+  "id": "3241",
+  "slug": "ajude-um-candidato-a-phd",
+  "title": "Ajude um Candidato a PhD!",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3241",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3241.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

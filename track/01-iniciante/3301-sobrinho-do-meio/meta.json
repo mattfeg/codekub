@@ -1,0 +1,17 @@
+{
+  "id": "3301",
+  "slug": "sobrinho-do-meio",
+  "title": "Sobrinho do Meio",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3301",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3301.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

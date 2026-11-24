@@ -1,0 +1,17 @@
+{
+  "id": "3053",
+  "slug": "jogo-dos-copos",
+  "title": "Jogo Dos Copos",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3053",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3053.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

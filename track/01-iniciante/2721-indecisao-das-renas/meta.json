@@ -1,0 +1,17 @@
+{
+  "id": "2721",
+  "slug": "indecisao-das-renas",
+  "title": "Indecisão das Renas",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2721",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2721.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

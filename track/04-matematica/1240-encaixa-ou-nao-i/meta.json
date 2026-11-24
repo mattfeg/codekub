@@ -1,0 +1,17 @@
+{
+  "id": "1240",
+  "slug": "encaixa-ou-nao-i",
+  "title": "Encaixa ou Não I",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1240",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1240.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

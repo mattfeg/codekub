@@ -1,0 +1,17 @@
+{
+  "id": "2807",
+  "slug": "iccanobif",
+  "title": "Iccanobif",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2807",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2807.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

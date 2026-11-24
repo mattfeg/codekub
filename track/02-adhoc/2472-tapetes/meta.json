@@ -1,0 +1,17 @@
+{
+  "id": "2472",
+  "slug": "tapetes",
+  "title": "Tapetes",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2472",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2472.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

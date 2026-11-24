@@ -1,0 +1,17 @@
+{
+  "id": "2161",
+  "slug": "raiz-quadrada-de-10",
+  "title": "Raiz Quadrada de 10",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2161",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2161.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

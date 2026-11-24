@@ -1,0 +1,17 @@
+{
+  "id": "3139",
+  "slug": "buscando-novos-seguidores",
+  "title": "Buscando Novos Seguidores",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3139",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3139.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

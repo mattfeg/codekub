@@ -1,0 +1,17 @@
+{
+  "id": "2530",
+  "slug": "cola",
+  "title": "Cola",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2530",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2530.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

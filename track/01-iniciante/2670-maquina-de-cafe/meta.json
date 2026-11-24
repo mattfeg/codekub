@@ -1,0 +1,17 @@
+{
+  "id": "2670",
+  "slug": "maquina-de-cafe",
+  "title": "Máquina de Café",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2670",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2670.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

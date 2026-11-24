@@ -1,0 +1,17 @@
+{
+  "id": "2479",
+  "slug": "ordenando-a-lista-de-criancas-do-papai-noel",
+  "title": "Ordenando a Lista de Crianças do Papai Noel",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2479",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2479.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

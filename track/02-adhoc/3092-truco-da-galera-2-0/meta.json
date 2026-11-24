@@ -1,0 +1,17 @@
+{
+  "id": "3092",
+  "slug": "truco-da-galera-2-0",
+  "title": "Truco da Galera 2.0",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3092",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3092.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

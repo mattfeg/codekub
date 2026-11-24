@@ -1,0 +1,17 @@
+{
+  "id": "1279",
+  "slug": "ano-bissexto-ou-ano-nao-bissexto",
+  "title": "Ano Bissexto ou Ano não Bissexto",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1279",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1279.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

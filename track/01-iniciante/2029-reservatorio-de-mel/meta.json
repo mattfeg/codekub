@@ -1,0 +1,17 @@
+{
+  "id": "2029",
+  "slug": "reservatorio-de-mel",
+  "title": "Reservatório de Mel",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2029",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2029.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2765",
+  "slug": "entrada-e-saida-com-virgula",
+  "title": "Entrada e Saída com Virgula",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2765",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2765.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1647",
+  "slug": "um-jogo-com-bolas-de-gude",
+  "title": "Um Jogo com Bolas de Gude",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1647",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1647.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

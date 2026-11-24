@@ -1,0 +1,17 @@
+{
+  "id": "2175",
+  "slug": "qual-o-mais-rapido",
+  "title": "Qual o Mais Rápido?",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2175",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2175.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

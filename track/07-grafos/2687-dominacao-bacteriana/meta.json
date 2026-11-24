@@ -1,0 +1,17 @@
+{
+  "id": "2687",
+  "slug": "dominacao-bacteriana",
+  "title": "Dominação Bacteriana",
+  "topic": "grafos",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2687",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2687.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

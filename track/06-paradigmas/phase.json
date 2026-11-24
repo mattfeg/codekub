@@ -1,0 +1,13 @@
+{
+  "id": "06",
+  "slug": "paradigmas",
+  "title": "Paradigmas",
+  "description": "Programação dinâmica, busca binária e gulosos",
+  "open": true,
+  "topics": [
+    {
+      "slug": "paradigmas",
+      "title": "Paradigmas"
+    }
+  ]
+}

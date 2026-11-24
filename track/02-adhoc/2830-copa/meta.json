@@ -1,0 +1,17 @@
+{
+  "id": "2830",
+  "slug": "copa",
+  "title": "Copa",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2830",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2830.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

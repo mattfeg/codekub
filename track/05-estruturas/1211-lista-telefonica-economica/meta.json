@@ -1,0 +1,17 @@
+{
+  "id": "1211",
+  "slug": "lista-telefonica-economica",
+  "title": "Lista Telefônica Econômica",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1211",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1211.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

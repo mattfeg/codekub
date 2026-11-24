@@ -1,0 +1,17 @@
+{
+  "id": "1340",
+  "slug": "eu-posso-adivinhar-a-estrutura-de-dados",
+  "title": "Eu Posso Adivinhar a Estrutura de Dados!",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1340",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1340.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

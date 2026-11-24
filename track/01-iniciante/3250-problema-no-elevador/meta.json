@@ -1,0 +1,17 @@
+{
+  "id": "3250",
+  "slug": "problema-no-elevador",
+  "title": "Problema no Elevador",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3250",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3250.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

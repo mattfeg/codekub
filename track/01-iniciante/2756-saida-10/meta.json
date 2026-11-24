@@ -1,0 +1,17 @@
+{
+  "id": "2756",
+  "slug": "saida-10",
+  "title": "Saída 10",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2756",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2756.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

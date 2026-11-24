@@ -1,0 +1,17 @@
+{
+  "id": "3043",
+  "slug": "festa-junina",
+  "title": "Festa Junina",
+  "topic": "grafos",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3043",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3043.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

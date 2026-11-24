@@ -1,0 +1,13 @@
+{
+  "id": "04",
+  "slug": "matematica",
+  "title": "Matemática",
+  "description": "Sistemas numéricos, primos e números grandes",
+  "open": true,
+  "topics": [
+    {
+      "slug": "matematica",
+      "title": "Matemática"
+    }
+  ]
+}

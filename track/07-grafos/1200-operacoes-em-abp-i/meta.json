@@ -1,0 +1,17 @@
+{
+  "id": "1200",
+  "slug": "operacoes-em-abp-i",
+  "title": "Operações em ABP I",
+  "topic": "grafos",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1200",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1200.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

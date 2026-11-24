@@ -1,0 +1,17 @@
+{
+  "id": "2542",
+  "slug": "iu-di-oh",
+  "title": "Iu-Di-Oh!",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2542",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2542.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

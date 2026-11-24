@@ -1,0 +1,17 @@
+{
+  "id": "2712",
+  "slug": "rodizio-veicular",
+  "title": "Rodízio Veicular",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2712",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2712.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "3312",
+  "slug": "imberbe-matematico",
+  "title": "Imberbe Matemático",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3312",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3312.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

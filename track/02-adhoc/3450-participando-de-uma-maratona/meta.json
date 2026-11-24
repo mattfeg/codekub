@@ -1,0 +1,17 @@
+{
+  "id": "3450",
+  "slug": "participando-de-uma-maratona",
+  "title": "Participando de uma Maratona",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3450",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3450.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

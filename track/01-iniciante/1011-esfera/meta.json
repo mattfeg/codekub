@@ -1,0 +1,17 @@
+{
+  "id": "1011",
+  "slug": "esfera",
+  "title": "Esfera",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1011",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1011.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

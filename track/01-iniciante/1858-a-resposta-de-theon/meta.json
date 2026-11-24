@@ -1,0 +1,17 @@
+{
+  "id": "1858",
+  "slug": "a-resposta-de-theon",
+  "title": "A Resposta de Theon",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1858",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1858.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

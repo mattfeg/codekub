@@ -1,0 +1,17 @@
+{
+  "id": "2290",
+  "slug": "numeros-apaixornados",
+  "title": "Números Apaixornados",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2290",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2290.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

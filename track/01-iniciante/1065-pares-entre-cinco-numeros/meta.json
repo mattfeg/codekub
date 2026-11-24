@@ -1,0 +1,17 @@
+{
+  "id": "1065",
+  "slug": "pares-entre-cinco-numeros",
+  "title": "Pares entre Cinco Números",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1065",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1065.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

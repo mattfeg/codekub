@@ -1,0 +1,17 @@
+{
+  "id": "1549",
+  "slug": "dividindo-a-coca",
+  "title": "Dividindo a Coca",
+  "topic": "geometria",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1549",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1549.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

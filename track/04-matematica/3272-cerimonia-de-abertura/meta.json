@@ -1,0 +1,17 @@
+{
+  "id": "3272",
+  "slug": "cerimonia-de-abertura",
+  "title": "Cerimônia de Abertura",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3272",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3272.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

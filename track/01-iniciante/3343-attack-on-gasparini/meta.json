@@ -1,0 +1,17 @@
+{
+  "id": "3343",
+  "slug": "attack-on-gasparini",
+  "title": "Attack On Gasparini",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3343",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3343.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

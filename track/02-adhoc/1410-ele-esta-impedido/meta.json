@@ -1,0 +1,17 @@
+{
+  "id": "1410",
+  "slug": "ele-esta-impedido",
+  "title": "Ele Está Impedido!",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1410",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1410.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2483",
+  "slug": "feliz-nataaal",
+  "title": "Feliz Nataaal!",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2483",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2483.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

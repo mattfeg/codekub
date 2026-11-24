@@ -1,0 +1,17 @@
+{
+  "id": "2295",
+  "slug": "frota-de-taxi",
+  "title": "Frota de Táxi",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2295",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2295.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

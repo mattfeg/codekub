@@ -1,0 +1,17 @@
+{
+  "id": "2674",
+  "slug": "super-primos-ativar",
+  "title": "Super Primos: Ativar!",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2674",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2674.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

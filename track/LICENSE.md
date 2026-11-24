@@ -1,17 +1,12 @@
-# Licença da trilha
+# Conteúdo da trilha
 
-O conteúdo desta pasta (enunciados, metadados, testes, soluções de referência e
-geradores) está sob a licença **Creative Commons Atribuição 4.0 Internacional
-(CC BY 4.0)**: https://creativecommons.org/licenses/by/4.0/deed.pt_BR
+Os problemas desta pasta são do [beecrowd](https://beecrowd.com). Títulos,
+exemplos de entrada e saída e enunciados pertencem ao beecrowd e aos autores de
+cada problema; o codekub não tem licença sobre eles e só aponta para a página
+original de cada um (`source.url` no `meta.json`).
 
-Você pode copiar, adaptar e redistribuir, inclusive para fins comerciais,
-desde que dê o crédito apropriado e indique se fez alterações.
-
-- **Exercícios originais:** © 2026 Matheus Ferreira.
-- **Exercícios adaptados:** cada um indica a origem, a licença e as alterações
-  no seu `meta.json` e no rodapé do `statement.md`. Os chefões da fase 01 vêm
-  do Codeforces, via o dataset
-  [open-r1/codeforces](https://huggingface.co/datasets/open-r1/codeforces)
-  (CC BY 4.0).
+Título, categoria, link e exemplos foram reunidos a partir do projeto
+[potigol/beecrowd](https://github.com/potigol/beecrowd) (licença MIT), com
+`tools/import_beecrowd.rb`.
 
 O código do codekub (fora desta pasta) está sob a licença MIT; veja `LICENSE`.

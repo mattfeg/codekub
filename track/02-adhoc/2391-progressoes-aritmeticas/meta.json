@@ -1,0 +1,17 @@
+{
+  "id": "2391",
+  "slug": "progressoes-aritmeticas",
+  "title": "Progressões Aritméticas",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2391",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2391.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

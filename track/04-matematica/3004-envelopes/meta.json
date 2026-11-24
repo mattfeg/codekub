@@ -1,0 +1,17 @@
+{
+  "id": "3004",
+  "slug": "envelopes",
+  "title": "Envelopes",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3004",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3004.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

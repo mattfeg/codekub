@@ -1,0 +1,17 @@
+{
+  "id": "2600",
+  "slug": "tustin-e-seu-dado-novo",
+  "title": "Tustin e Seu Dado Novo",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2600",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2600.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

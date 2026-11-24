@@ -1,0 +1,17 @@
+{
+  "id": "1802",
+  "slug": "catalogo-de-livros",
+  "title": "Catálogo de Livros",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1802",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1802.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

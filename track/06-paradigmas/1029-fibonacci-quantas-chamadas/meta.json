@@ -1,0 +1,17 @@
+{
+  "id": "1029",
+  "slug": "fibonacci-quantas-chamadas",
+  "title": "Fibonacci, Quantas Chamadas?",
+  "topic": "paradigmas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1029",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1029.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

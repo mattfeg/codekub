@@ -1,0 +1,17 @@
+{
+  "id": "1921",
+  "slug": "guilherme-e-suas-pipas",
+  "title": "Guilherme e Suas Pipas",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1921",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1921.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

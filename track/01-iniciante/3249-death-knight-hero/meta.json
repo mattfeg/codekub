@@ -1,0 +1,17 @@
+{
+  "id": "3249",
+  "slug": "death-knight-hero",
+  "title": "Death Knight Hero",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3249",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3249.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

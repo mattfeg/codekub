@@ -1,0 +1,17 @@
+{
+  "id": "1063",
+  "slug": "trilhos-novamente-tracando-movimentos",
+  "title": "Trilhos Novamente... Traçando Movimentos",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1063",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1063.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

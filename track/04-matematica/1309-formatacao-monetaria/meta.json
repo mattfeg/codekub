@@ -1,0 +1,17 @@
+{
+  "id": "1309",
+  "slug": "formatacao-monetaria",
+  "title": "Formatação Monetária",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1309",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1309.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

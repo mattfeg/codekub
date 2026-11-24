@@ -1,0 +1,17 @@
+{
+  "id": "1093",
+  "slug": "vampiros",
+  "title": "Vampiros",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1093",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1093.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1580",
+  "slug": "quid-est-veritas-est-vir-qui-adest",
+  "title": "Quid Est Veritas? Est Vir Qui Adest!",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1580",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1580.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

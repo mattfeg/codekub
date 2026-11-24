@@ -1,0 +1,17 @@
+{
+  "id": "2396",
+  "slug": "corrida",
+  "title": "Corrida",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2396",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2396.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

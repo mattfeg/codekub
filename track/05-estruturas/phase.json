@@ -1,0 +1,13 @@
+{
+  "id": "05",
+  "slug": "estruturas",
+  "title": "Estruturas",
+  "description": "Estruturas e bibliotecas: filas, pilhas, ordenação e mapas",
+  "open": true,
+  "topics": [
+    {
+      "slug": "estruturas",
+      "title": "Estruturas e Bibliotecas"
+    }
+  ]
+}

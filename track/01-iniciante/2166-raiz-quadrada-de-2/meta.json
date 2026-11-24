@@ -1,0 +1,17 @@
+{
+  "id": "2166",
+  "slug": "raiz-quadrada-de-2",
+  "title": "Raiz Quadrada de 2",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2166",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2166.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

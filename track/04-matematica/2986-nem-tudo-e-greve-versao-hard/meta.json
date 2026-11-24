@@ -1,0 +1,17 @@
+{
+  "id": "2986",
+  "slug": "nem-tudo-e-greve-versao-hard",
+  "title": "Nem Tudo é Greve Versão Hard",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2986",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2986.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

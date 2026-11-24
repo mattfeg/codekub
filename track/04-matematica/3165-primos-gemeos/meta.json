@@ -1,0 +1,17 @@
+{
+  "id": "3165",
+  "slug": "primos-gemeos",
+  "title": "Primos Gêmeos",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3165",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3165.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

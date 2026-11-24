@@ -1,0 +1,17 @@
+{
+  "id": "1171",
+  "slug": "frequencia-de-numeros",
+  "title": "Frequência de Números",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1171",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1171.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

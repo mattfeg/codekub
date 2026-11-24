@@ -1,0 +1,17 @@
+{
+  "id": "1436",
+  "slug": "jogo-do-tijolo",
+  "title": "Jogo do Tijolo",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1436",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1436.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

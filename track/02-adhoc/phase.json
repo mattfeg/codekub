@@ -1,0 +1,13 @@
+{
+  "id": "02",
+  "slug": "adhoc",
+  "title": "Ad-Hoc",
+  "description": "Simulação, datas e problemas gerais",
+  "open": true,
+  "topics": [
+    {
+      "slug": "adhoc",
+      "title": "Ad-Hoc"
+    }
+  ]
+}

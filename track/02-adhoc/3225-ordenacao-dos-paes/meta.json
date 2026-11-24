@@ -1,0 +1,17 @@
+{
+  "id": "3225",
+  "slug": "ordenacao-dos-paes",
+  "title": "Ordenação dos Pães",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3225",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3225.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

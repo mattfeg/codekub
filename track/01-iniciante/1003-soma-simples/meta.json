@@ -1,0 +1,17 @@
+{
+  "id": "1003",
+  "slug": "soma-simples",
+  "title": "Soma Simples",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1003",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1003.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

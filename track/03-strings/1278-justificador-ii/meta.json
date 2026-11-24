@@ -1,0 +1,17 @@
+{
+  "id": "1278",
+  "slug": "justificador-ii",
+  "title": "Justificador II",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1278",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1278.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2766",
+  "slug": "entrada-e-saida-lendo-e-pulando-nomes",
+  "title": "Entrada e Saída Lendo e Pulando Nomes",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2766",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2766.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

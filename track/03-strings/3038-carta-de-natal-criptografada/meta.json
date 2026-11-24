@@ -1,0 +1,17 @@
+{
+  "id": "3038",
+  "slug": "carta-de-natal-criptografada",
+  "title": "Carta de Natal Criptografada",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3038",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3038.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

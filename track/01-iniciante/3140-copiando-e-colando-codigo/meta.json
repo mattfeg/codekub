@@ -1,0 +1,17 @@
+{
+  "id": "3140",
+  "slug": "copiando-e-colando-codigo",
+  "title": "Copiando e Colando Código",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3140",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3140.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

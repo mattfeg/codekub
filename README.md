@@ -1,9 +1,9 @@
 # codekub
 
 Trilha local de prática de programação no terminal, no estilo de um juiz
-online: do *Olá, mundo* aos problemas de competição. Você resolve no seu
-editor, e o codekub julga com testes e mostra o veredito ao vivo (AC, PE, WA,
-TLE, RE, CE).
+online, com os problemas do [beecrowd](https://beecrowd.com). Você lê o
+enunciado no navegador, resolve no seu editor, e o codekub julga com os
+exemplos do enunciado e mostra o veredito ao vivo (AC, PE, WA, TLE, RE, CE).
 
 *by Matheus Ferreira*
 
@@ -41,13 +41,28 @@ Depois de instalar, `codekub doctor` confere linguagens, isolamento e pastas.
 
 ## Usar
 
+Rode `codekub` para abrir o painel. Lá você navega pelas fases (Iniciante,
+Ad-Hoc, Strings, Matemática…), abre um problema e usa as teclas:
+
+| Tecla | Ação |
+|---|---|
+| `o` | abre o enunciado no beecrowd, no navegador |
+| `e` | abre sua solução no editor |
+| `s` | julga a solução |
+| `w` | modo watch: julga a cada vez que você salvar |
+| `?` | ajuda |
+
+Os testes são os exemplos do enunciado, então passar neles não garante que a
+solução seja aceita no beecrowd. Todas as fases ficam liberadas desde o início.
+
+Os mesmos recursos existem como comandos, para quem prefere o terminal:
+
 ```sh
-codekub              # painel interativo
-codekub next         # próximo exercício
-codekub show 13      # enunciado
-codekub test 13      # julga sua solução
-codekub test 13 --exemplos
-codekub watch 13     # julga a cada vez que você salvar
+codekub next          # próximo problema
+codekub show 1001     # exemplos e link do enunciado
+codekub open 1001     # abre o enunciado no navegador
+codekub test 1001     # julga sua solução
+codekub watch 1001    # julga a cada vez que você salvar
 codekub progress
 codekub help
 ```
@@ -86,8 +101,21 @@ sandbox, e em nenhum sistema há limite de memória no modo local.
 ```sh
 go build -o codekub .
 CODEKUB_TRACK=./track ./codekub    # usa a trilha do disco em vez da embutida
-ruby tools/build_tests.rb          # regenera os testes depois de editar exercícios
 ```
+
+Os problemas vieram do projeto
+[potigol/beecrowd](https://github.com/potigol/beecrowd): título, categoria,
+link e exemplos. Para criar os que faltarem (o script nunca sobrescreve um
+problema que já existe na trilha):
+
+```sh
+git clone https://github.com/potigol/beecrowd ~/potigol-beecrowd
+ruby tools/import_beecrowd.rb ~/potigol-beecrowd
+```
+
+Para dar a um problema enunciado e testes próprios, edite o `statement.md` e
+crie um `reference.rb` e um `generator.rb` na pasta dele; depois rode
+`ruby tools/build_tests.rb track/<fase>/<problema>` para gerar os testes.
 
 A trilha (enunciados, metadados e testes) vai embutida no binário; as soluções
 de referência e os geradores ficam só no repositório. Uma versão é publicada
@@ -97,7 +125,8 @@ Homebrew.
 ## Estrutura
 
 ```
-track/<fase>/<id>-<slug>/   statement.md  meta.json  reference.rb  generator.rb  tests/
+track/<fase>/<id>-<slug>/   statement.md  meta.json  tests/  (reference.rb  generator.rb)
+tools/import_beecrowd.rb    cria os problemas a partir de um clone de potigol/beecrowd
 tools/build_tests.rb        gera tests/ rodando reference.rb nas entradas do generator.rb
 internal/judge              juiz: Runner (LocalRunner), comparação, vereditos
 internal/track              leitura da trilha
@@ -107,7 +136,7 @@ internal/ui                 painel (Bubble Tea) e saída dos comandos
 
 ## Conteúdo e licenças
 
-O código está sob a licença MIT (`LICENSE`). Os exercícios originais são de
-Matheus Ferreira, sob CC BY 4.0 (`track/LICENSE.md`). Os chefões são adaptados
-do Codeforces via o dataset `open-r1/codeforces` (CC BY 4.0), com crédito no
-enunciado e no `meta.json` de cada um.
+O código está sob a licença MIT (`LICENSE`). Os problemas são do beecrowd:
+títulos, exemplos e enunciados pertencem ao beecrowd e aos seus autores, e o
+codekub só aponta para eles. Os dados vêm do projeto potigol/beecrowd (MIT).
+Veja `track/LICENSE.md`.

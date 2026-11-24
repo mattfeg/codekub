@@ -1,0 +1,17 @@
+{
+  "id": "2858",
+  "slug": "tabuleiro-infinito",
+  "title": "Tabuleiro Infinito",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2858",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2858.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

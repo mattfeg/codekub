@@ -1,0 +1,17 @@
+{
+  "id": "2243",
+  "slug": "isosceles",
+  "title": "Isósceles",
+  "topic": "paradigmas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2243",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2243.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1131",
+  "slug": "grenais",
+  "title": "Grenais",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1131",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1131.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

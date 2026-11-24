@@ -123,11 +123,11 @@ func TestSolveThroughTheTUI(t *testing.T) {
 		h.key("enter") // open it
 		h.frames(20)
 		snap("04-problem")
-		if h.m.screen != scrProblem || h.m.prob.ex.ID != "001" {
-			t.Fatalf("expected problem 001, got screen %d", h.m.screen)
+		if h.m.screen != scrProblem || h.m.prob.ex.ID != "1000" {
+			t.Fatalf("expected problem 1000, got screen %d", h.m.screen)
 		}
 
-		path := filepath.Join(solutions, "001-hello-world.rb")
+		path := filepath.Join(solutions, "1000-hello-world.rb")
 		os.WriteFile(path, []byte("puts 'Ola'\n"), 0o644)
 		h.key("s")
 		h.frames(30)
@@ -136,14 +136,14 @@ func TestSolveThroughTheTUI(t *testing.T) {
 			t.Fatalf("expected WA, got %+v", r)
 		}
 
-		os.WriteFile(path, []byte("puts 'Olá, mundo!'\n"), 0o644)
+		os.WriteFile(path, []byte("puts 'Hello World!'\n"), 0o644)
 		h.key("r")
 		h.frames(8)
 		snap("06-result-AC")
 		if r := h.m.jdg.result; r == nil || r.Verdict != "AC" || h.m.jdg.subID == 0 {
 			t.Fatalf("expected a recorded AC, got %+v", r)
 		}
-		if !h.m.stats["001-hello-world"].Solved {
+		if !h.m.stats["1000-hello-world"].Solved {
 			t.Fatal("progress was not updated after AC")
 		}
 
@@ -151,7 +151,7 @@ func TestSolveThroughTheTUI(t *testing.T) {
 		runs := h.m.jdg.runs
 		go func() { // the user saves while the watcher is waiting
 			time.Sleep(500 * time.Millisecond)
-			os.WriteFile(path, []byte("puts 'Olá, mundo!'\n# salvo de novo\n"), 0o644)
+			os.WriteFile(path, []byte("puts 'Hello World!'\n# salvo de novo\n"), 0o644)
 		}()
 		h.key("w")
 		h.frames(8)

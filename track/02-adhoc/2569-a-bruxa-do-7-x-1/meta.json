@@ -1,0 +1,17 @@
+{
+  "id": "2569",
+  "slug": "a-bruxa-do-7-x-1",
+  "title": "A Bruxa do 7 x 1",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2569",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2569.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

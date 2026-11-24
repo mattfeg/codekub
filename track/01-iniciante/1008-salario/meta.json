@@ -1,0 +1,17 @@
+{
+  "id": "1008",
+  "slug": "salario",
+  "title": "Salário",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1008",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1008.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

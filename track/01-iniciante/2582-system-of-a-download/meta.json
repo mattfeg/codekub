@@ -1,0 +1,17 @@
+{
+  "id": "2582",
+  "slug": "system-of-a-download",
+  "title": "System of a Download",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2582",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2582.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

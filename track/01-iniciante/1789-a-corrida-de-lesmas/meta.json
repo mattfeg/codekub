@@ -1,0 +1,17 @@
+{
+  "id": "1789",
+  "slug": "a-corrida-de-lesmas",
+  "title": "A Corrida de Lesmas",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1789",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1789.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

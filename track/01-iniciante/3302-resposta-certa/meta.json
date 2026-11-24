@@ -1,0 +1,17 @@
+{
+  "id": "3302",
+  "slug": "resposta-certa",
+  "title": "Resposta Certa",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3302",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3302.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

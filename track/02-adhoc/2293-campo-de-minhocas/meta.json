@@ -1,0 +1,17 @@
+{
+  "id": "2293",
+  "slug": "campo-de-minhocas",
+  "title": "Campo de Minhocas",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2293",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2293.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

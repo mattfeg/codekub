@@ -1,0 +1,17 @@
+{
+  "id": "2170",
+  "slug": "juros-do-projeto",
+  "title": "Juros do Projeto",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2170",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2170.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

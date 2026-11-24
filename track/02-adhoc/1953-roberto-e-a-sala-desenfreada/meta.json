@@ -1,0 +1,17 @@
+{
+  "id": "1953",
+  "slug": "roberto-e-a-sala-desenfreada",
+  "title": "Roberto e a Sala Desenfreada",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1953",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1953.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

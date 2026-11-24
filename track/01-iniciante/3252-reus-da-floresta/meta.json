@@ -1,0 +1,17 @@
+{
+  "id": "3252",
+  "slug": "reus-da-floresta",
+  "title": "Reus da Floresta",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3252",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3252.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

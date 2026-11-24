@@ -1,0 +1,17 @@
+{
+  "id": "2779",
+  "slug": "album-da-copa",
+  "title": "Álbum da Copa",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2779",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2779.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

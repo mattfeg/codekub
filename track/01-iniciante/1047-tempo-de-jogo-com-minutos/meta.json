@@ -1,0 +1,17 @@
+{
+  "id": "1047",
+  "slug": "tempo-de-jogo-com-minutos",
+  "title": "Tempo de Jogo com Minutos",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1047",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1047.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

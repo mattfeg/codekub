@@ -1,0 +1,17 @@
+{
+  "id": "2399",
+  "slug": "campo-minado",
+  "title": "Campo Minado",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2399",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2399.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

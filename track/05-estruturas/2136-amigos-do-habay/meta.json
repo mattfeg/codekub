@@ -1,0 +1,17 @@
+{
+  "id": "2136",
+  "slug": "amigos-do-habay",
+  "title": "Amigos do Habay",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2136",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2136.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

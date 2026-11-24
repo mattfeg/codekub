@@ -1,0 +1,17 @@
+{
+  "id": "2717",
+  "slug": "tempo-do-duende",
+  "title": "Tempo do Duende",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2717",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2717.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

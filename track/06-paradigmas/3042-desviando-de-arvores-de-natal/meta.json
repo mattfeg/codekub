@@ -1,0 +1,17 @@
+{
+  "id": "3042",
+  "slug": "desviando-de-arvores-de-natal",
+  "title": "Desviando de Árvores de Natal",
+  "topic": "paradigmas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3042",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3042.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

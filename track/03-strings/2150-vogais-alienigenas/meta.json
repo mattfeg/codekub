@@ -1,0 +1,17 @@
+{
+  "id": "2150",
+  "slug": "vogais-alienigenas",
+  "title": "Vogais Alienígenas",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2150",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2150.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

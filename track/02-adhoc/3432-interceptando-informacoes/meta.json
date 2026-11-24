@@ -1,0 +1,17 @@
+{
+  "id": "3432",
+  "slug": "interceptando-informacoes",
+  "title": "Interceptando Informações",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3432",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3432.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

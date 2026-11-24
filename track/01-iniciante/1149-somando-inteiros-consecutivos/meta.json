@@ -1,0 +1,17 @@
+{
+  "id": "1149",
+  "slug": "somando-inteiros-consecutivos",
+  "title": "Somando Inteiros Consecutivos",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1149",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1149.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

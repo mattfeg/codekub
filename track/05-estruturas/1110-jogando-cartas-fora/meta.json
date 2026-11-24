@@ -1,0 +1,17 @@
+{
+  "id": "1110",
+  "slug": "jogando-cartas-fora",
+  "title": "Jogando Cartas Fora",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1110",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1110.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

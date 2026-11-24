@@ -1,0 +1,17 @@
+{
+  "id": "3104",
+  "slug": "resto-2-0",
+  "title": "Resto 2.0",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3104",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3104.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

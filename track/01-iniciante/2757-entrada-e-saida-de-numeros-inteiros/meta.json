@@ -1,0 +1,17 @@
+{
+  "id": "2757",
+  "slug": "entrada-e-saida-de-numeros-inteiros",
+  "title": "Entrada e Saída de Números Inteiros",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2757",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2757.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

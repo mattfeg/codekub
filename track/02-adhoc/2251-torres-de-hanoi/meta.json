@@ -1,0 +1,17 @@
+{
+  "id": "2251",
+  "slug": "torres-de-hanoi",
+  "title": "Torres de Hanói",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2251",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2251.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

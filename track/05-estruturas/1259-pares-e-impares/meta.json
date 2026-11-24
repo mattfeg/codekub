@@ -1,0 +1,17 @@
+{
+  "id": "1259",
+  "slug": "pares-e-impares",
+  "title": "Pares e Ímpares",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1259",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1259.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

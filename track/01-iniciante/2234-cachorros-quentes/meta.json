@@ -1,0 +1,17 @@
+{
+  "id": "2234",
+  "slug": "cachorros-quentes",
+  "title": "Cachorros-Quentes",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2234",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2234.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

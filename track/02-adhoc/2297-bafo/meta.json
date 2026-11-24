@@ -1,0 +1,17 @@
+{
+  "id": "2297",
+  "slug": "bafo",
+  "title": "Bafo",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2297",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2297.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

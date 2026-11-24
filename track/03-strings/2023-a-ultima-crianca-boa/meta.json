@@ -1,0 +1,17 @@
+{
+  "id": "2023",
+  "slug": "a-ultima-crianca-boa",
+  "title": "A Última Criança Boa",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2023",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2023.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

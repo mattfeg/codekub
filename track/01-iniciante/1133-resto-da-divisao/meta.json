@@ -1,0 +1,17 @@
+{
+  "id": "1133",
+  "slug": "resto-da-divisao",
+  "title": "Resto da Divisão",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1133",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1133.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

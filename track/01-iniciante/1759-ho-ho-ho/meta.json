@@ -1,0 +1,17 @@
+{
+  "id": "1759",
+  "slug": "ho-ho-ho",
+  "title": "Ho Ho Ho",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1759",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1759.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

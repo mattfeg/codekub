@@ -1,0 +1,17 @@
+{
+  "id": "1641",
+  "slug": "restaurante-e-pizzaria-do-alfredo",
+  "title": "Restaurante e Pizzaria do Alfredo",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1641",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1641.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

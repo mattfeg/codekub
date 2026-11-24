@@ -1,0 +1,17 @@
+{
+  "id": "2862",
+  "slug": "inseto",
+  "title": "Inseto!",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2862",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2862.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

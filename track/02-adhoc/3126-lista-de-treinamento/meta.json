@@ -1,0 +1,17 @@
+{
+  "id": "3126",
+  "slug": "lista-de-treinamento",
+  "title": "Lista de Treinamento",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 2,
+  "source": {
+    "name": "beecrowd 3126",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3126.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

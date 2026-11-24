@@ -1,0 +1,17 @@
+{
+  "id": "1075",
+  "slug": "resto-2",
+  "title": "Resto 2",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1075",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1075.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

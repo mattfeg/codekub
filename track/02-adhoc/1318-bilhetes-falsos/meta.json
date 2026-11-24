@@ -1,0 +1,17 @@
+{
+  "id": "1318",
+  "slug": "bilhetes-falsos",
+  "title": "Bilhetes Falsos",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1318",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1318.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

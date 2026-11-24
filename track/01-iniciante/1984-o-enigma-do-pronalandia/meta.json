@@ -1,0 +1,17 @@
+{
+  "id": "1984",
+  "slug": "o-enigma-do-pronalandia",
+  "title": "O Enigma do Pronalândia",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1984",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1984.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2690",
+  "slug": "nova-senha-ra",
+  "title": "Nova Senha RA",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2690",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2690.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2694",
+  "slug": "problema-com-a-calculadora",
+  "title": "Problema com a Calculadora",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2694",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2694.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

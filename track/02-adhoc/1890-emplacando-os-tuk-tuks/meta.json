@@ -1,0 +1,17 @@
+{
+  "id": "1890",
+  "slug": "emplacando-os-tuk-tuks",
+  "title": "Emplacando os Tuk-tuks",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1890",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1890.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

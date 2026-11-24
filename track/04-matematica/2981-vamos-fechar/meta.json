@@ -1,0 +1,17 @@
+{
+  "id": "2981",
+  "slug": "vamos-fechar",
+  "title": "Vamos Fechar",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2981",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2981.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

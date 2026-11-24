@@ -1,0 +1,17 @@
+{
+  "id": "1715",
+  "slug": "handebol",
+  "title": "Handebol",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1715",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1715.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

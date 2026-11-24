@@ -1,0 +1,17 @@
+{
+  "id": "2727",
+  "slug": "codigo-secreto",
+  "title": "Código Secreto",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2727",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2727.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1867",
+  "slug": "maior-numero-de-um-algarismo",
+  "title": "Maior Número de Um Algarismo",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1867",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1867.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

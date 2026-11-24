@@ -1,0 +1,17 @@
+{
+  "id": "3166",
+  "slug": "procurando-palavras-na-diagonal-principal",
+  "title": "Procurando Palavras na Diagonal Principal",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3166",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3166.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

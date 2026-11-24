@@ -1,0 +1,13 @@
+{
+  "id": "07",
+  "slug": "grafos",
+  "title": "Grafos",
+  "description": "Busca, caminhos mínimos e árvores",
+  "open": true,
+  "topics": [
+    {
+      "slug": "grafos",
+      "title": "Grafos"
+    }
+  ]
+}

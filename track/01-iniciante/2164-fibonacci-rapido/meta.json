@@ -1,0 +1,17 @@
+{
+  "id": "2164",
+  "slug": "fibonacci-rapido",
+  "title": "Fibonacci Rápido",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2164",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2164.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

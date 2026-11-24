@@ -1,0 +1,17 @@
+{
+  "id": "2630",
+  "slug": "escala-de-cinza",
+  "title": "Escala de Cinza",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2630",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2630.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

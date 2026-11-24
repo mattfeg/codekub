@@ -1,0 +1,17 @@
+{
+  "id": "1080",
+  "slug": "maior-e-posicao",
+  "title": "Maior e Posição",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1080",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1080.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

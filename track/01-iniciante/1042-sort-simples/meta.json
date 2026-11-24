@@ -1,0 +1,17 @@
+{
+  "id": "1042",
+  "slug": "sort-simples",
+  "title": "Sort Simples",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 2,
+  "source": {
+    "name": "beecrowd 1042",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1042.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

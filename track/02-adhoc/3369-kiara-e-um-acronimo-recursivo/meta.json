@@ -1,0 +1,17 @@
+{
+  "id": "3369",
+  "slug": "kiara-e-um-acronimo-recursivo",
+  "title": "KIARA é um Acrônimo Recursivo",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3369",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3369.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

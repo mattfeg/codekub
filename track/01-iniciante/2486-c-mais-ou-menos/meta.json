@@ -1,0 +1,17 @@
+{
+  "id": "2486",
+  "slug": "c-mais-ou-menos",
+  "title": "C Mais ou Menos?",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2486",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2486.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

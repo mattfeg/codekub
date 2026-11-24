@@ -1,0 +1,17 @@
+{
+  "id": "3397",
+  "slug": "melhor-do-multiverso",
+  "title": "Melhor do Multiverso",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3397",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3397.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

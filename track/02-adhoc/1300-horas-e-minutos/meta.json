@@ -1,0 +1,17 @@
+{
+  "id": "1300",
+  "slug": "horas-e-minutos",
+  "title": "Horas e Minutos",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1300",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1300.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

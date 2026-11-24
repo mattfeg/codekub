@@ -1,0 +1,17 @@
+{
+  "id": "1185",
+  "slug": "acima-da-diagonal-secundaria",
+  "title": "Acima da Diagonal Secundária",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1185",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1185.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

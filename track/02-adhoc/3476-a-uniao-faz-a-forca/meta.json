@@ -1,0 +1,17 @@
+{
+  "id": "3476",
+  "slug": "a-uniao-faz-a-forca",
+  "title": "A união faz a força!",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3476",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3476.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

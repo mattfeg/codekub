@@ -1,0 +1,17 @@
+{
+  "id": "2140",
+  "slug": "duas-notas",
+  "title": "Duas Notas",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2140",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2140.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

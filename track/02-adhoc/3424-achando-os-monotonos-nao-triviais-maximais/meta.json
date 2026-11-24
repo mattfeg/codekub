@@ -1,0 +1,17 @@
+{
+  "id": "3424",
+  "slug": "achando-os-monotonos-nao-triviais-maximais",
+  "title": "Achando os Monótonos Não-Triviais Maximais",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3424",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3424.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

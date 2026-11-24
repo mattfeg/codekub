@@ -1,0 +1,17 @@
+{
+  "id": "1803",
+  "slug": "matring",
+  "title": "Matring",
+  "topic": "strings",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1803",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1803.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

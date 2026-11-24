@@ -1,0 +1,17 @@
+{
+  "id": "1307",
+  "slug": "tudo-o-que-voce-precisa-e-amor",
+  "title": "Tudo o que Você Precisa é Amor",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1307",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1307.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

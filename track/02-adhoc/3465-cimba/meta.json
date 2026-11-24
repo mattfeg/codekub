@@ -1,0 +1,17 @@
+{
+  "id": "3465",
+  "slug": "cimba",
+  "title": "Cimba",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3465",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3465.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

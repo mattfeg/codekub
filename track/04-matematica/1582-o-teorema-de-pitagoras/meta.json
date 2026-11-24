@@ -1,0 +1,17 @@
+{
+  "id": "1582",
+  "slug": "o-teorema-de-pitagoras",
+  "title": "O Teorema de Pitágoras",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1582",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1582.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

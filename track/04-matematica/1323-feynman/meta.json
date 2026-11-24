@@ -1,0 +1,17 @@
+{
+  "id": "1323",
+  "slug": "feynman",
+  "title": "Feynman",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1323",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1323.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

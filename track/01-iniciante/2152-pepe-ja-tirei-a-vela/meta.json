@@ -1,0 +1,17 @@
+{
+  "id": "2152",
+  "slug": "pepe-ja-tirei-a-vela",
+  "title": "Pepe, Já Tirei a Vela!",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2152",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2152.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

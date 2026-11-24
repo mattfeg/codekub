@@ -1,0 +1,17 @@
+{
+  "id": "1393",
+  "slug": "lajotas-hexagonais",
+  "title": "Lajotas Hexagonais",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1393",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1393.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

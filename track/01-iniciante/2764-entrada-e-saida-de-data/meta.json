@@ -1,0 +1,17 @@
+{
+  "id": "2764",
+  "slug": "entrada-e-saida-de-data",
+  "title": "Entrada e Saída de Data",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2764",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2764.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

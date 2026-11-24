@@ -1,0 +1,17 @@
+{
+  "id": "1914",
+  "slug": "de-quem-e-a-vez",
+  "title": "De Quem é a Vez?",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1914",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1914.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

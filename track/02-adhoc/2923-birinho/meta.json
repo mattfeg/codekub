@@ -1,0 +1,17 @@
+{
+  "id": "2923",
+  "slug": "birinho",
+  "title": "Birinho",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2923",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2923.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

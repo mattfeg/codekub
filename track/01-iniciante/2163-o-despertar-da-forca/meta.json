@@ -1,0 +1,17 @@
+{
+  "id": "2163",
+  "slug": "o-despertar-da-forca",
+  "title": "O Despertar da Força",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2163",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2163.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

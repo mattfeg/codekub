@@ -1,0 +1,17 @@
+{
+  "id": "2681",
+  "slug": "macacos-da-torre-de-hanoi",
+  "title": "Macacos da Torre de Hanoi",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 2681",
+    "url": "https://resources.beecrowd.com/repository/UOJ_2681.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "3005",
+  "slug": "pilhas-de-paralelepipedos",
+  "title": "Pilhas de Paralelepípedos",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3005",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3005.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

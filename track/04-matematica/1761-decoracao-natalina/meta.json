@@ -1,0 +1,17 @@
+{
+  "id": "1761",
+  "slug": "decoracao-natalina",
+  "title": "Decoração Natalina",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1761",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1761.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

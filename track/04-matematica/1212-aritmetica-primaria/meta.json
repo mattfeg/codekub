@@ -1,0 +1,17 @@
+{
+  "id": "1212",
+  "slug": "aritmetica-primaria",
+  "title": "Aritmética Primária",
+  "topic": "matematica",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1212",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1212.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1006",
+  "slug": "media-2",
+  "title": "Média 2",
+  "topic": "iniciante",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 3,
+  "source": {
+    "name": "beecrowd 1006",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1006.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

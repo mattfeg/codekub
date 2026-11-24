@@ -1,0 +1,17 @@
+{
+  "id": "1281",
+  "slug": "ida-a-feira",
+  "title": "Ida à Feira",
+  "topic": "estruturas",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1281",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1281.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

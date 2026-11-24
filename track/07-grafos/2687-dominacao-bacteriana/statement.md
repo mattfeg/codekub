@@ -1,0 +1,42 @@
+# Dominação Bacteriana
+
+O enunciado está no beecrowd: aperte `o` para abri-lo no navegador.
+
+<https://resources.beecrowd.com/repository/UOJ_2687.html>
+
+Os testes são só os exemplos do enunciado: passar neles não garante que a
+solução esteja certa no beecrowd.
+
+## Exemplos
+
+Entrada:
+
+```
+2
+8
+0 0 0 0 0 0 0 0
+0 1 1 1 1 1 1 0
+0 1 1 1 0 0 1 0
+0 0 0 1 0 0 1 0
+0 0 1 1 0 0 1 0
+0 0 0 1 1 1 0 0
+0 0 0 1 1 0 0 0
+0 0 0 0 0 0 0 0
+9
+1 0 0 1 0 1 0 0 1
+0 1 0 1 0 1 0 1 0
+0 0 1 1 1 1 1 0 0
+0 1 1 0 0 0 1 1 0
+0 0 1 0 0 0 1 0 0
+0 1 1 0 0 0 1 1 0
+0 1 0 0 0 0 0 1 0
+0 1 1 1 1 1 1 1 0
+1 0 0 1 0 1 0 0 1
+```
+
+Saída:
+
+```
+13.00
+25.00
+```

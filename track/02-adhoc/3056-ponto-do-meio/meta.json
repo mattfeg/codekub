@@ -1,0 +1,17 @@
+{
+  "id": "3056",
+  "slug": "ponto-do-meio",
+  "title": "Ponto do Meio",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 3056",
+    "url": "https://resources.beecrowd.com/repository/UOJ_3056.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

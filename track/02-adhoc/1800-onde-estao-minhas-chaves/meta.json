@@ -1,0 +1,17 @@
+{
+  "id": "1800",
+  "slug": "onde-estao-minhas-chaves",
+  "title": "Onde Estão Minhas Chaves",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1800",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1800.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1559",
+  "slug": "2048",
+  "title": "2048",
+  "topic": "adhoc",
+  "level": 0,
+  "concepts": [
+
+  ],
+  "time_limit": 1.0,
+  "samples": 1,
+  "source": {
+    "name": "beecrowd 1559",
+    "url": "https://resources.beecrowd.com/repository/UOJ_1559.html",
+    "dataset": "potigol/beecrowd (exemplos)"
+  }
+}
