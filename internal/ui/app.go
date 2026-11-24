@@ -80,6 +80,7 @@ type model struct {
 
 	home homeState
 	trk  trackState
+	srch searchState
 	prob problemState
 	jdg  judgeState
 	prog progressState
@@ -240,6 +241,13 @@ func (m *model) handleKey(key string) tea.Cmd {
 	}
 	if m.screen == scrSettings && m.set.typing {
 		return m.settingsKey(key) // every key is text while typing a command
+	}
+	if m.srch.open {
+		return m.searchKey(key) // every key is text while searching
+	}
+	if key == "/" && !m.helpOpen {
+		m.openSearch()
+		return nil
 	}
 	if key == "?" || (m.helpOpen && key == "esc") {
 		m.helpOpen = !m.helpOpen
@@ -423,6 +431,8 @@ func (m *model) View() string {
 	bodyH := m.h - lipgloss.Height(header) - lipgloss.Height(footer)
 	var body string
 	switch {
+	case m.srch.open:
+		body = m.searchView(bodyH)
 	case m.helpOpen:
 		body = m.helpView(bodyH)
 	case m.screen == scrHome:
@@ -499,10 +509,15 @@ func (m *model) footerView() string {
 			help = helpLine("enter", "salvar", "esc", "cancelar")
 		}
 	}
-	if m.helpOpen {
+	switch {
+	case m.srch.open:
+		help = helpLine("↑↓", "escolher", "enter", "abrir", "esc", "fechar")
+	case m.helpOpen:
 		help = helpLine("esc ?", "fechar ajuda", "q", "sair")
-	} else {
+	case m.screen == scrSettings && m.set.typing:
 		help = helpLine("?", "ajuda") + sFaint.Render("  ·  ") + help
+	default:
+		help = helpLine("?", "ajuda", "/", "buscar") + sFaint.Render("  ·  ") + help
 	}
 	right := ""
 	if m.toast != "" && m.frame < m.toastUntil {

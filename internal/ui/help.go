@@ -28,7 +28,8 @@ func (m *model) helpView(h int) string {
 	keys := strings.Join([]string{
 		keySection("NAVEGAÇÃO", [][2]string{
 			{"tab", "próxima aba"}, {"shift+tab", "aba anterior"}, {"↑↓  j k", "mover ou rolar"},
-			{"→  enter", "abrir"}, {"←  esc", "voltar"}, {"?", "abrir ou fechar a ajuda"}, {"q", "sair"},
+			{"→  enter", "abrir"}, {"←  esc", "voltar"}, {"/", "buscar problema por número ou título"},
+			{"?", "abrir ou fechar a ajuda"}, {"q", "sair"},
 		}),
 		"",
 		keySection("NO EXERCÍCIO", [][2]string{

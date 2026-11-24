@@ -261,3 +261,62 @@ func TestSettingsThroughTheTUI(t *testing.T) {
 		}
 	}
 }
+
+func TestSearchThroughTheTUI(t *testing.T) {
+	env, _ := newEnv(t)
+	h := &harness{t: t, m: newModel(env, Options{})}
+	h.send(tea.WindowSizeMsg{Width: 120, Height: 40})
+	h.key("x")
+
+	// By number: "q" must be text while searching, not quit.
+	h.key("/")
+	for _, r := range "2q" {
+		h.key(string(r))
+	}
+	if !h.m.srch.open || h.m.srch.query != "2q" {
+		t.Fatalf("search should capture keys, query %q", h.m.srch.query)
+	}
+	h.key("backspace")
+	for _, r := range "165" {
+		h.key(string(r))
+	}
+	h.frames(20)
+	h.expect("BUSCAR PROBLEMA")
+	if snap := os.Getenv("SNAP_DIR"); snap != "" {
+		os.WriteFile(filepath.Join(snap, "120x40-11-search.txt"), []byte(h.view()), 0o644)
+	}
+	h.key("enter")
+	if h.m.srch.open || h.m.screen != scrProblem || h.m.prob.ex.ID != "2165" {
+		t.Fatalf("enter should open problem 2165, got screen %d ex %v", h.m.screen, h.m.prob.ex)
+	}
+	if p := env.Track.Phases[h.m.trk.phase]; p.Exercises[h.m.trk.ex].ID != "2165" {
+		t.Fatal("the track screen should point at the problem found")
+	}
+
+	// By title, ignoring accents, from the problem screen: it replaces the
+	// open problem instead of stacking another one.
+	depth := len(h.m.stack)
+	h.key("/")
+	for _, r := range "area do circulo" {
+		h.key(string(r))
+	}
+	h.key("enter")
+	if h.m.prob.ex.ID != "1002" || len(h.m.stack) != depth {
+		t.Fatalf("expected 1002 at the same depth, got %s (stack %d→%d)", h.m.prob.ex.ID, depth, len(h.m.stack))
+	}
+
+	// No results: enter does nothing, esc closes.
+	h.key("/")
+	h.key("z")
+	h.key("z")
+	h.key("z")
+	h.key("z")
+	h.key("enter")
+	if !h.m.srch.open {
+		t.Fatal("enter without results should keep the search open")
+	}
+	h.key("esc")
+	if h.m.srch.open || h.m.prob.ex.ID != "1002" {
+		t.Fatal("esc should close the search and keep the problem")
+	}
+}

@@ -10,6 +10,7 @@ require (
 	github.com/charmbracelet/x/ansi v0.10.2
 	github.com/fsnotify/fsnotify v1.10.1
 	github.com/lucasb-eyer/go-colorful v1.4.1
+	golang.org/x/text v0.30.0
 	modernc.org/sqlite v1.63.0
 )
 
@@ -43,7 +44,6 @@ require (
 	golang.org/x/net v0.38.0 // indirect
 	golang.org/x/sys v0.49.0 // indirect
 	golang.org/x/term v0.36.0 // indirect
-	golang.org/x/text v0.30.0 // indirect
 	modernc.org/libc v1.80.1 // indirect
 	modernc.org/mathutil v1.7.1 // indirect
 	modernc.org/memory v1.12.1 // indirect

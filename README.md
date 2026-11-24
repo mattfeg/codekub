@@ -46,6 +46,7 @@ Ad-Hoc, Strings, Matemática…), abre um problema e usa as teclas:
 
 | Tecla | Ação |
 |---|---|
+| `/` | busca um problema pelo número ou pelo título, de qualquer tela |
 | `o` | abre o enunciado no beecrowd, no navegador |
 | `e` | abre sua solução no editor |
 | `s` | julga a solução |
